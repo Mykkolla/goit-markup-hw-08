@@ -1,0 +1,79 @@
+:root {
+    --accsent-color: #2196F3;
+    --main-color: #212121;
+    --text-color:#757575;
+    --logo-color:#000000;
+    --hover-button-color:#FFFFFF;
+    --portfolio-nav-button-color:#F5F4FA;
+    --team-color:#F5F4FA;
+    --fon-footer-h-color:#2F303A;
+ }
+.link {
+    text-decoration: none;
+ }
+ .list {
+    list-style: none;
+ }
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+    background-color: var(--hover-button-color);
+    letter-spacing: 0.03em;
+}
+/* ---------------------Header-start*/
+.logo {
+    font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+color: var(--accsent-color);
+} 
+a.navigation-studio-active, a.navigation-portfolio-active {
+    color: var(--accsent-color);
+}
+.logo-start {
+    color:var(--logo-color);
+}
+.navigation-studio, .navigation-portfolio, .navigation-contacts {
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-color);
+}
+.contacts-mail, .contacts-tel {
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-color);
+}
+.navigation-studio:hover, .navigation-portfolio:hover, .navigation-contacts:hover, 
+.contacts-mail:hover, .contacts-tel:hover {
+    color: var(--accsent-color);
+}
+.navigation-studio:focus, .navigation-portfolio:focus, .navigation-contacts:focus, 
+.contacts-mail:focus, .contacts-tel:focus {
+    color: var(--accsent-color);
+}
+/* ---------------------Header-finish*/
+
+
+
+
+
+
+
+
+
+
+/* ---------------------Footer*/
+.logo-footer {
+    color: var(--hover-button-color);
+}
+.footer-main {
+    background-color: var(--fon-footer-h-color);
+}
