@@ -30,9 +30,15 @@ font-size: 26px;
 line-height: 1.19;
 color: var(--accsent-color);
 } 
-a.navigation-studio-active, a.navigation-portfolio-active {
+/*a.navigation-studio-active, a.navigation-portfolio-active {
+    color: var(--accsent-color);
+}---------work----*/
+
+/*------.navigation > .navigation-studio-active {
     color: var(--accsent-color);
 }
+.navigation > .navigation-portfolio-active {
+    color: var(--accsent-color);}------no_work---*/
 
 .logo-start {
     color:var(--logo-color);
@@ -44,6 +50,9 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--main-color);
+}
+.navigation-studio-active, .navigation-portfolio-active {
+    color: var(--accsent-color);
 }
 .contacts-mail, .contacts-tel {
     font-weight: 500;
