@@ -33,6 +33,7 @@ color: var(--accsent-color);
 a.navigation-studio-active, a.navigation-portfolio-active {
     color: var(--accsent-color);
 }
+
 .logo-start {
     color:var(--logo-color);
 }
