@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
 }
-/* ---------------------Header-start*/
+/* ------------------------------------------------------------Header-start*/
 .logo {
     font-family: 'Raleway', sans-serif;
 font-style: normal;
@@ -34,7 +34,7 @@ color: var(--accsent-color);
 } 
 /*a.navigation-studio-active, a.navigation-portfolio-active {
     color: var(--accsent-color);
-}---------work-1---*/
+}---------work-2---*/
 /*.navigation-studio-active, .navigation-portfolio-active {
     color: var(--accsent-color);
 }---------work-2---*/
@@ -81,9 +81,9 @@ color: var(--accsent-color);
     color: var(--accsent-color);
 } -------------work--*/
 
-/* ----------------------------------------------Header-finish*/
+/* -----------------------------------------------------------Header-finish*/
 
-/*---------section--1-----main---*/
+/*---------------------------------section--1-----main---*/
 
 .main {
     background-color: var(--fon-footer-h-color);
@@ -127,7 +127,7 @@ color: var(--hover-button-color);
     background: #188CE8;
 }
 
-/*---------section--2-----Особливості---*/
+/*---------------------------------------section--2-----Особливості---*/
 
   
 
@@ -157,7 +157,7 @@ color: var(--text-color);
     margin-left: 30px;
 } */
 
-/*---------section--3-----Чим ми займаємося---*/
+/*--------------------------------------section--3-----Чим ми займаємося---*/
 .doing {
         font-style: normal;
     font-weight: 700;
@@ -172,7 +172,7 @@ color: var(--text-color);
     display: inline-block;
     margin-left: 30px;
 } */
-/*---------section--4-----ourteam---*/
+/*-------------------------------------------------section--4-----ourteam---*/
 .team-our {
     font-style: normal;
 font-weight: 700;
@@ -208,7 +208,9 @@ color: var(--main-color);
     width: 270px;
 height: 368px;
 background: var(--hover-button-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14),
+ 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 
 }
@@ -219,7 +221,7 @@ border-radius: 0px 0px 4px 4px;
 } */
 
 
-/* ---------------------Footer*/
+/* ------------------------------------------------------------Footer*/
 .logo-footer {
     color: var(--hover-button-color);
 }
