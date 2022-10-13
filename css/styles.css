@@ -5,7 +5,6 @@
     --logo-color:#000000;
     --hover-button-color:#FFFFFF;
     --portfolio-nav-button-color:#F5F4FA;
-    --team-color:#F5F4FA;
     --fon-footer-h-color:#2F303A;
  }
 .link {
@@ -103,7 +102,7 @@ color: var(--hover-button-color);
     position: absolute;
 width: 216px;
 border: 0;
-background: #2196F3;
+background: var(--accsent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 height: 50px;
@@ -235,3 +234,32 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /* ---------------------finish---index.html*/
+
+/* ------------------------portfolio--start------- */
+
+/* -Навігація */
+
+.job-but {
+    font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+border: 0;
+cursor: pointer;
+background: var(--portfolio-nav-button-color);
+border-radius: 4px;
+
+}
+
+.job-but:hover, .job-but:focus {
+    background: var(--accsent-color);
+/* shadow-middle */
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 
+0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
+/* ------портфоліо---- */
