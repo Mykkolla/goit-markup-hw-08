@@ -18,6 +18,7 @@
  body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
+    font-style: normal;
     background-color: var(--hover-button-color);
     letter-spacing: 0.03em;
     margin: 0;
@@ -26,7 +27,6 @@
 /* ------------------------------------------------------------Header-start*/
 .logo {
     font-family: 'Raleway', sans-serif;
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
@@ -49,8 +49,7 @@ color: var(--accsent-color);
     color:var(--logo-color);
 }
 .navigation-studio, .navigation-portfolio, .navigation-contacts {
-    font-style: normal;
-font-weight: 500;
+    font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
@@ -91,11 +90,9 @@ width: 1600px;
 height: 600px;
 }
 .main-title {
-    font-style: normal;
-font-weight: 900;
+    font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-/* or 136% */
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -105,7 +102,6 @@ color: var(--hover-button-color);
 .main-butt {
     position: absolute;
 width: 216px;
-height: 50px;
 border: 0;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -114,7 +110,7 @@ height: 50px;
 left: 692px;
 top: 430px;
 cursor: pointer;
-
+font-family: inherit;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -132,22 +128,17 @@ color: var(--hover-button-color);
   
 
 .specific > h3 {
-    font-style: normal;
-font-weight: 700;
+    font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main-color);
 }
 
 .specific > li > p {
-    font-style: normal;
-font-weight: 400;
+    font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-/* or 171% */
-letter-spacing: 0.03em;
 color: var(--text-color);
 }
 
@@ -159,12 +150,10 @@ color: var(--text-color);
 
 /*--------------------------------------section--3-----Чим ми займаємося---*/
 .doing {
-        font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--main-color);
 }
 
@@ -174,31 +163,26 @@ color: var(--text-color);
 } */
 /*-------------------------------------------------section--4-----ourteam---*/
 .team-our {
-    font-style: normal;
-font-weight: 700;
+ font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--main-color);
 }
 
 .team-list > li >  h3 {
-    font-style: normal;
+   
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--main-color);
 }
 .team-list > li > p  {
-        font-style: normal;
-    font-weight: 400;
+        font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-color);
  
 }
@@ -230,19 +214,17 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .address-str {
-   font-style: normal;
+    font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
 color: var(--hover-button-color)
 }
 .address-mail, .address-tel {
-  font-style: normal;
+    font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 .address-mail:focus, .address-tel:focus, .address-str:focus {
