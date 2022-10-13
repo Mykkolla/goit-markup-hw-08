@@ -263,3 +263,21 @@ border-radius: 4px;
 }
 
 /* ------портфоліо---- */
+
+.sample-href > p {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.89;
+color: var(--text-color);
+}
+
+.sample-href {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+
