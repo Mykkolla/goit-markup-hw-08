@@ -20,6 +20,8 @@
     color: var(--main-color);
     background-color: var(--hover-button-color);
     letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
 }
 /* ---------------------Header-start*/
 .logo {
@@ -62,17 +64,26 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--text-color);
 }
-.navigation-studio:hover, .navigation-portfolio:hover, .navigation-contacts:hover, 
+
+.navigation a:hover, .contacts a:hover {
+color: var(--accsent-color);
+}/*---alt-work----*/
+.navigation a:focus, .contacts a:focus {
+    color: var(--accsent-color);
+}/*---alt-work----*/
+
+/* .navigation-studio:hover, .navigation-portfolio:hover, .navigation-contacts:hover, 
 .contacts-mail:hover, .contacts-tel:hover {
     color: var(--accsent-color);
-}
-.navigation-studio:focus, .navigation-portfolio:focus, .navigation-contacts:focus, 
+} -------------work--*/
+/* .navigation-studio:focus, .navigation-portfolio:focus, .navigation-contacts:focus, 
 .contacts-mail:focus, .contacts-tel:focus {
     color: var(--accsent-color);
-}
-/* ---------------------Header-finish*/
+} -------------work--*/
 
-/*---------section--1--------*/
+/* ----------------------------------------------Header-finish*/
+
+/*---------section--1-----main---*/
 
 .main {
     background-color: var(--fon-footer-h-color);
@@ -116,7 +127,9 @@ color: var(--hover-button-color);
     background: #188CE8;
 }
 
-/*---------section--2--------*/
+/*---------section--2-----Особливості---*/
+
+  
 
 .specific > h3 {
     font-style: normal;
@@ -138,7 +151,13 @@ letter-spacing: 0.03em;
 color: var(--text-color);
 }
 
-/*---------section--3--------*/
+/* .specific > li {
+    display: inline-block;
+    padding:10px 30px;
+    margin-left: 30px;
+} */
+
+/*---------section--3-----Чим ми займаємося---*/
 .doing {
         font-style: normal;
     font-weight: 700;
@@ -148,6 +167,11 @@ color: var(--text-color);
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
+
+/* .doing-img > li {
+    display: inline-block;
+    margin-left: 30px;
+} */
 /*---------section--4-----ourteam---*/
 .team-our {
     font-style: normal;
@@ -186,7 +210,14 @@ height: 368px;
 background: var(--hover-button-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+
 }
+
+/* .team-list > li {
+    display: inline-block;
+    margin-left: 30px;
+} */
+
 
 /* ---------------------Footer*/
 .logo-footer {
