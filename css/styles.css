@@ -38,10 +38,10 @@ color: var(--accsent-color);
 /*.navigation-studio-active, .navigation-portfolio-active {
     color: var(--accsent-color);
 }---------work-2---*/
-.navigation  .navigation-studio-active {
+.navigation-studio.navigation-studio-active {
     color: var(--accsent-color);
 }/*--work-3-*/
-.navigation .navigation-portfolio-active {
+.navigation-portfolio.navigation-portfolio-active {
     color: var(--accsent-color);}/*--work-3-*/
 
 
