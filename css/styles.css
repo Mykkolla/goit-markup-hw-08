@@ -17,7 +17,6 @@
  body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
-    font-style: normal;
     background-color: var(--hover-button-color);
     letter-spacing: 0.03em;
     margin: 0;
@@ -85,32 +84,26 @@ color: var(--accsent-color);
 
 .main {
     background-color: var(--fon-footer-h-color);
-width: 1600px;
-height: 600px;
+    text-align: center;
+
 }
 .main-title {
     font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--hover-button-color);
 }
 
 .main-butt {
-    position: absolute;
-width: 216px;
 border: 0;
 background: var(--accsent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-height: 50px;
-left: 692px;
-top: 430px;
+padding:10px 32px;
 cursor: pointer;
 font-family: inherit;
-font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -126,7 +119,7 @@ color: var(--hover-button-color);
 
   
 
-.specific > h3 {
+.specific-ul {
     font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -134,7 +127,7 @@ text-transform: uppercase;
 color: var(--main-color);
 }
 
-.specific > li > p {
+.specific-ul > p {
     font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -169,7 +162,7 @@ text-align: center;
 color: var(--main-color);
 }
 
-.team-list > li >  h3 {
+.team-list-img > h3 {
    
 font-weight: 500;
 font-size: 16px;
@@ -177,7 +170,7 @@ line-height: 1.19;
 text-align: center;
 color: var(--main-color);
 }
-.team-list > li > p  {
+.team-list-img > p  {
         font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -186,16 +179,13 @@ color: var(--main-color);
  
 }
 
-.team-list-pd,  .team-list-fd, .team-list-m, 
-.team-list-ui{
+.team-list-img {
     width: 270px;
-height: 368px;
 background: var(--hover-button-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
 0px 1px 1px rgba(0, 0, 0, 0.14),
  0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-
 }
 
 /* .team-list > li {
@@ -210,6 +200,7 @@ border-radius: 0px 0px 4px 4px;
 }
 .footer-main {
     background-color: var(--fon-footer-h-color);
+    margin: 9px;
 }
 
 .address-str {
@@ -241,7 +232,6 @@ color: rgba(255, 255, 255, 0.6);
 
 .job-but {
     font-family: inherit;
-font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
@@ -256,7 +246,6 @@ border-radius: 4px;
 
 .job-but:hover, .job-but:focus {
     background: var(--accsent-color);
-/* shadow-middle */
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 
 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
@@ -273,7 +262,6 @@ color: var(--text-color);
 
 .sample-href {
     font-family: inherit;
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
