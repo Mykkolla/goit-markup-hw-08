@@ -119,14 +119,14 @@ color: var(--hover-button-color);
 
   
 
-.specific-ul {
+.specific-ul > h3 {
     font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 color: var(--main-color);
 }
 
-.specific-ul > p {
+.specific-p {
     font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -247,6 +247,7 @@ border-radius: 4px;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 
 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
+color: var(--hover-button-color);
 }
 
 /* ------портфоліо---- */
