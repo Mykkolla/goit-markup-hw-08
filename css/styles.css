@@ -7,6 +7,13 @@
     --portfolio-nav-button-color:#F5F4FA;
     --fon-footer-h-color:#2F303A;
  }
+
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .link {
     text-decoration: none;
  }
@@ -23,6 +30,16 @@
     padding: 0;
 }
 /* ------------------------------------------------------------Header-start*/
+.navigation {
+    display: inline-flex;
+    padding:10px 30px;
+    margin-left: 453px;
+}
+.contacts {
+    display: inline-flex;
+    padding:10px 30px;
+    
+}
 .logo {
     font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -43,6 +60,7 @@ color: var(--accsent-color);
     color: var(--accsent-color);}/*--work-3-*/
 
 
+    
 .logo-start {
     color:var(--logo-color);
 }
@@ -52,6 +70,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--main-color);
+
 }
 
 .contacts-mail, .contacts-tel {
@@ -227,6 +246,12 @@ color: rgba(255, 255, 255, 0.6);
 /* ------------------------portfolio--start------- */
 
 /* -Навігація */
+    
+/* .job {
+    display: flex;
+    margin: 100px 0 50px 0;
+    justify-content: center;
+} */
 
 .job-but {
     font-family: inherit;
