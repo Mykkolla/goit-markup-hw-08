@@ -21,6 +21,8 @@
  }
  .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
  }
 
  body {
@@ -52,12 +54,10 @@
 .navigation {
    display: inline-flex;
    margin: 32px 345px 0 94px;
-   padding: 0;
 }
 
 .contacts {
     display: inline-flex;
-    padding: 0;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -129,8 +129,8 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--hover-button-color);
-margin: 0 0 40px 0;
-
+ margin: 0;/* -------*/
+padding: 0 0 40px 0;
 }
 
 .main-butt {
@@ -188,6 +188,7 @@ color: var(--text-color);
 }
 .doing-img {
     padding: 0;
+    margin-bottom: 0;
 }
 
  .doing-img > li {
@@ -205,9 +206,7 @@ line-height: 1.17;
 text-align: center;
 color: var(--main-color);
 }
-.team-list {
-    padding: 0;
-}
+
 .section-team {
     background-color: var(--portfolio-nav-button-color);
 }
@@ -249,13 +248,16 @@ border-radius: 0px 0px 4px 4px;
 /* ------------------------------------------------------------Footer*/
 .logo-footer {
     color: var(--hover-button-color);
+    
 }
 .footer-main {
+    
     background-color: var(--fon-footer-h-color);
     
 }
-.address {
-    padding: 0;
+.logo-mar {
+    display: inline-block;
+    margin: 64px 0 32px 0;
 }
 .address-str {
     font-style: normal;
@@ -270,6 +272,14 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
+}
+.address-str, .address-mail {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.address-tel {
+    display: inline-block;
+    padding-bottom: 64px;
 }
 .address-mail:focus, .address-tel:focus, .address-str:focus {
     color: var(--accsent-color);
@@ -286,9 +296,9 @@ color: rgba(255, 255, 255, 0.6);
     
  .job {
     display: flex;
-    margin: 100px 0 50px 0;
     justify-content: center;
-    margin: 0;
+    padding: 30px 0 30px 0;
+    
 } 
 
 .job-but {
@@ -324,7 +334,7 @@ line-height: 1.89;
 color: var(--text-color);
 }
 .sample {
-    padding: 0;
+    margin: 20px 0 0 0;
 }
 .sample-href > .sample-titel {
     font-family: inherit;
