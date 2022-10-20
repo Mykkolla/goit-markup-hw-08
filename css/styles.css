@@ -12,6 +12,10 @@
 .section {
     padding:94px 0 94px 0;
 }
+.section-portfolio {
+    padding: 72px 0 84px 0;
+}
+
 .link {
     text-decoration: none;
  }
@@ -115,7 +119,7 @@ color: var(--accsent-color);
 .main {
     background-color: var(--fon-footer-h-color);
     text-align: center;
-    padding: 300px;
+    padding: 200px;
     
 }
 .main-title {
@@ -125,6 +129,7 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--hover-button-color);
+margin: 0 0 40px 0;
 
 }
 
@@ -141,6 +146,7 @@ font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
 color: var(--hover-button-color);
+min-width:216px;
 }
 
 .main-butt:hover, .main-butt:focus {
@@ -203,7 +209,7 @@ color: var(--main-color);
     padding: 0;
 }
 .section-team {
-    background-color: #F5F4FA;
+    background-color: var(--portfolio-nav-button-color);
 }
 
 .team-list-img > h3 {
@@ -282,6 +288,7 @@ color: rgba(255, 255, 255, 0.6);
     display: flex;
     margin: 100px 0 50px 0;
     justify-content: center;
+    margin: 0;
 } 
 
 .job-but {
@@ -295,6 +302,8 @@ border: 0;
 cursor: pointer;
 background: var(--portfolio-nav-button-color);
 border-radius: 4px;
+min-width: 130px;
+padding: 10px 20px;
 
 }
 
@@ -314,7 +323,9 @@ font-size: 16px;
 line-height: 1.89;
 color: var(--text-color);
 }
-
+.sample {
+    padding: 0;
+}
 .sample-href > .sample-titel {
     font-family: inherit;
     font-weight: 700;
@@ -324,3 +335,7 @@ color: var(--text-color);
     color: var(--main-color);
 }
 
+.sample > li {
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+}
