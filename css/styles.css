@@ -12,6 +12,10 @@
 .section {
     padding:94px 0 94px 0;
 }
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .section-portfolio {
     padding: 72px 0 84px 0;
 }
@@ -44,7 +48,7 @@
 /* ------------------------------------------------------------Header-start*/
 .header {
     border: 1px solid #ECECEC;
-    height: 80px;/* --------- */
+    
 }
 .logo {
     display: inline-block;
@@ -53,7 +57,7 @@
 
 .navigation {
    display: inline-flex;
-   margin: 32px 345px 0 94px;
+   margin: 32px 345px 24px 94px;
 }
 
 .contacts {
@@ -85,7 +89,7 @@ letter-spacing: 0.02em;
 color: var(--main-color);
 }
 .navigation-studio, .navigation-portfolio,.contacts-mail {
-    padding: 0 50px 0 0;
+    margin: 0 50px 0 0;
 }
 
 .contacts-mail, .contacts-tel {
@@ -129,8 +133,8 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--hover-button-color);
- margin: 0;/* -------*/
-padding: 0 0 40px 0;
+padding: 0;/* -------*/
+margin:0 0 40px 0;
 }
 
 .main-butt {
@@ -176,8 +180,18 @@ color: var(--text-color);
     vertical-align:top;
 
 } 
-
+.specific-ul {
+    display: inline-block;
+    margin-right: 30px;
+    
+ }
+ .specific-ul:last-child {
+    margin-right: 0px;
+ }
 /*--------------------------------------section--3-----Чим ми займаємося---*/
+.section-doing {
+    padding-top: 0;
+}
 .doing {
     font-weight: 700;
     font-size: 36px;
@@ -195,7 +209,7 @@ color: var(--text-color);
     display: inline-block;
 } 
 .coding, .mobile {
-    padding: 0 40px 0 0;
+    margin: 0 40px 0 0;
 }
 
 /*-------------------------------------------------section--4-----ourteam---*/
@@ -205,10 +219,12 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 color: var(--main-color);
+margin-top: 0;
 }
 
-.section-team {
+.container-team {
     background-color: var(--portfolio-nav-button-color);
+    
 }
 
 .team-list-img > h3 {
@@ -218,8 +234,8 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 color: var(--main-color);
-padding: 24px 0 10px 0;
-margin: 0;
+padding: 0;
+margin: 24px 0 10px 0;
 
 }
 .team-list-img > p  {
@@ -228,8 +244,8 @@ margin: 0;
     line-height: 1.19;
     text-align: center;
     color: var(--text-color);
-    margin: 0;
-    padding: 0 0 15px 0;
+    margin: 0 0 15px 0;
+    padding:0;
 }
 
 .team-list-img {
@@ -240,11 +256,13 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 border-radius: 0px 0px 4px 4px;
 }
 
-.team-list > li {
+ .team-list-img {
     display: inline-block;
- } 
-
-
+    margin-right: 30px;
+ }
+ .team-list-img:last-child {
+    margin-right: 0px;
+ }
 /* ------------------------------------------------------------Footer*/
 .logo-footer {
     color: var(--hover-button-color);
@@ -293,14 +311,20 @@ color: rgba(255, 255, 255, 0.6);
 /* ------------------------portfolio--start------- */
 
 /* -Навігація */
-    
+
+
  .job {
     display: flex;
     justify-content: center;
-    padding: 30px 0 30px 0;
-    
+    margin: 30px 0 50px 0;
+       
 } 
-
+.job-li {
+    margin-right: 8px;
+}
+.job-li:last-child {
+    margin-right: 0px;
+}   
 .job-but {
     font-family: inherit;
 font-size: 16px;
@@ -332,10 +356,10 @@ color: var(--hover-button-color);
 font-size: 16px;
 line-height: 1.89;
 color: var(--text-color);
+margin:4px 0 20px 24px;
+
 }
-.sample {
-    margin: 20px 0 0 0;
-}
+
 .sample-href > .sample-titel {
     font-family: inherit;
     font-weight: 700;
@@ -343,9 +367,12 @@ color: var(--text-color);
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--main-color);
+    margin-left: 24px;
+    margin-top: 20px;
 }
 
-.sample > li {
+.sample-li {
     border: 1px solid #EEEEEE;
     display: inline-block;
+    
 }
