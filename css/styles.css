@@ -39,7 +39,7 @@
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -59,11 +59,12 @@
 }
 .navigation {
     display: flex;
-    margin: 32px 344px 24px 94px; 
+    margin: 32px 0 24px 94px;  
 }
 
 .contacts {
     display:flex;
+    margin-left: auto;
 }
 
 .contacts > li:not(:last-child) {
@@ -189,19 +190,21 @@ color: var(--text-color);
 }
 .specific {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .specific .specific-ul:not(:last-child) {
     margin-right: 30px;
 }
-
+.specific .specific-ul {
+    width: 270px;
+}
 /*--------------------------------------section--3-----Чим ми займаємося---*/
 .section-doing {
     padding-top: 0;
 }
 .doing {
-    margin: 0 0 30px 0;
+    margin-bottom:30px;
 
     font-weight: 700;
     font-size: 36px;
@@ -213,9 +216,7 @@ color: var(--text-color);
 .doing-img {
     margin-bottom: 0;
     display:flex;
-    align-content:center;
-    align-items: center;
-    justify-content: space-evenly;
+    
 }
 
 
@@ -371,8 +372,48 @@ color: var(--hover-button-color);
 
 /* ------портфоліо---- */
 
+.sample {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;  
+         
+}
+.sample .sample-li {
+    /* width: 370px; */
+    width: calc((100% - 60px)/3);
+}
+
+/* .sample .sample-li {
+    margin-right: 30px;
+}
+ .sample .sample-li + .sample-href {
+     width: calc((100% - 60px)/3);
+       
+}  */
+/* .sample-li:nth-child(3n) {
+    margin-right: 0;
+}  */
+  /* .sample .sample-li {
+    margin-right: 30px; 
+     margin-top: 30px; 
+}
+ .sample-li:nth-child(3n) {
+    margin-right: 0;
+}  
+ .sample-li:nth-child(-n+3) {
+    margin-top: 0;
+}   */
+
+/* .sample .sample-li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.sample .sample-li:not(:nth-child(-n+3)) {
+    margin-top: 30px;
+} */
+
 .sample-href > p {
-    margin:4px 0 20px 24px;
+display: flex;
+margin:4px 0 20px 24px;
 
 font-weight: 400;
 font-size: 16px;
@@ -383,7 +424,7 @@ color: var(--text-color);
 .sample-href > .sample-titel {
     margin-left: 24px;
     margin-top: 20px;
-
+display: flex;
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
@@ -392,13 +433,7 @@ color: var(--text-color);
     color: var(--main-color);
 
 }
-.sample {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 30px;
-    
-}
+
 .sample-li {
     border: 1px solid #EEEEEE;
        
