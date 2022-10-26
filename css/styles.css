@@ -140,7 +140,7 @@ color: var(--accsent-color);
 /*---------------------------------section--1-----main---*/
 
 .section-main {
-    padding: 200px;
+    padding: 200px 0;
     background-color: var(--fon-footer-h-color);
 }
 .main {
@@ -226,13 +226,16 @@ color: var(--text-color);
 .doing-img {
     margin-bottom: 0;
     display:flex;
-    
+    gap: 30px;
+}
+.doing-img .doing-li {
+    width: calc((100% - 60px)/3);
 }
 
 
-.doing-img > .doing-li:not(:last-child) {
+/* .doing-img > .doing-li:not(:last-child) {
     margin-right: 30px;
-  }
+  } */
 
 /*-------------------------------------------------section--4-----ourteam---*/
 .team-our {
