@@ -29,6 +29,10 @@
     margin: 0;
  }
 
+ h1, h2, h3, p {
+    margin: 0;
+ }
+
  body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
@@ -59,7 +63,7 @@
 }
 .navigation {
     display: flex;
-    margin: 32px 0 24px 94px;  
+    margin-left:93px;  
 }
 
 .contacts {
@@ -90,6 +94,9 @@ color: var(--accsent-color);
 }
 .navigation-studio, .navigation-portfolio, .navigation-contacts {
     display: block;
+padding-bottom: 32px;
+padding-top: 32px;
+
     font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -132,10 +139,12 @@ color: var(--accsent-color);
 
 /*---------------------------------section--1-----main---*/
 
-.main {
-    background-color: var(--fon-footer-h-color);
-    text-align: center;
+.section-main {
     padding: 200px;
+    background-color: var(--fon-footer-h-color);
+}
+.main {
+    text-align: center;
     
 }
 .main-title {
@@ -175,8 +184,10 @@ min-width:216px;
 
   
 
-.specific-ul > h3 {
-    font-weight: 700;
+.specific-li > h3 {
+    margin-bottom: 10px;
+
+font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 color: var(--main-color);
@@ -190,14 +201,13 @@ color: var(--text-color);
 }
 .specific {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.specific .specific-ul:not(:last-child) {
-    margin-right: 30px;
-}
-.specific .specific-ul {
-    width: 270px;
+
+.specific .specific-li {
+    width: calc((100% - 90px)/4);
 }
 /*--------------------------------------section--3-----Чим ми займаємося---*/
 .section-doing {
@@ -227,6 +237,7 @@ color: var(--text-color);
 /*-------------------------------------------------section--4-----ourteam---*/
 .team-our {
     margin-top: 0;
+    margin-bottom: 50px;
 
  font-weight: 700;
 font-size: 36px;
@@ -237,7 +248,7 @@ color: var(--main-color);
 
 .container-team {
     background-color: var(--portfolio-nav-button-color);
-   
+ 
 }
 
 .team-list-img > h3 {
@@ -270,12 +281,14 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
  0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
-.team-list > li:not(:last-child) {
-    margin-right: 30px;
-}
+
 .team-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.team-list .team-list-img {
+    width: calc((100% - 90px)/4);
 }
 
 /* ------------------------------------------------------------Footer*/
@@ -379,7 +392,7 @@ color: var(--hover-button-color);
          
 }
 .sample .sample-li {
-    /* width: 370px; */
+    
     width: calc((100% - 60px)/3);
 }
 
