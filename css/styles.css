@@ -12,10 +12,10 @@
 .section {
     padding:94px 0 94px 0;
 }
-.section.no-padding {
+/* .section.no-padding {
     padding-top: 0;
     padding-bottom: 0;
-}
+} */
 .section-portfolio {
     padding: 72px 0 84px 0;
 }
