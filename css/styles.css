@@ -49,6 +49,16 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+/* -----Other */
+/* -----Other */
+
+:root {
+    --items: 3;
+--indent: 30px;
+}
+
+
 /* ------------------------------------------------------------Header-start*/
 .header {
     border: 1px solid #ECECEC;
@@ -394,8 +404,10 @@ color: var(--hover-button-color);
     gap: 30px;  
          
 }
-.sample .sample-li {
+ .sample-li {
     
+    /* flex-basis:calc((100% - 60px)/5); */
+/* flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items)); */
     width: calc((100% - 60px)/3);
 }
 
@@ -452,5 +464,6 @@ display: flex;
 
 .sample-li {
     border: 1px solid #EEEEEE;
-       
+    
+    border-top: transparent;
 }
