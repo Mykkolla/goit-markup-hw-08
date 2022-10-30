@@ -207,7 +207,7 @@ color: var(--text-color);
 
 
 .specific .specific-li {
-    width: calc((100% - 90px)/4);
+    flex-basis: calc((100% - 90px)/4);
 }
 /*--------------------------------------section--3-----Чим ми займаємося---*/
 .section-doing {
@@ -229,7 +229,7 @@ color: var(--text-color);
     gap: 30px;
 }
 .doing-img .doing-li {
-    width: calc((100% - 60px)/3);
+    flex-basis: calc((100% - 60px)/3);
 }
 
 
@@ -291,7 +291,7 @@ border-radius: 0px 0px 4px 4px;
     gap: 30px;
 }
 .team-list .team-list-img {
-    width: calc((100% - 90px)/4);
+    flex-basis: calc((100% - 90px)/4);
 }
 
 /* ------------------------------------------------------------Footer*/
