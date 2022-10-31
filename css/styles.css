@@ -6,6 +6,9 @@
     --hover-button-color:#FFFFFF;
     --portfolio-nav-button-color:#F5F4FA;
     --fon-footer-h-color:#2F303A;
+
+    --items: 3;
+    --indent: 30px;
  }
 
 
@@ -53,9 +56,9 @@
 /* -----Other */
 /* -----Other */
 
-:root {
-    --items: 3;
---indent: 30px;
+img {
+    display: block;
+    max-width: 100%;
 }
 
 
@@ -406,33 +409,10 @@ color: var(--hover-button-color);
 }
  .sample-li {
     
-   flex-basis:calc((100% - 60px)/3); 
-/* flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items)); */
+   /* flex-basis:calc((100% - 60px)/3);  */
+flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
     /* width: calc((100% - 60px)/3); */
 }
-
-
-
-/* .sample-li:nth-child(3n) {
-    margin-right: 0;
-}  */
-  /* .sample .sample-li {
-    margin-right: 30px; 
-     margin-top: 30px; 
-}
- .sample-li:nth-child(3n) {
-    margin-right: 0;
-}  
- .sample-li:nth-child(-n+3) {
-    margin-top: 0;
-}   */
-
-/* .sample .sample-li:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-.sample .sample-li:not(:nth-child(-n+3)) {
-    margin-top: 30px;
-} */
 
 .sample-border > p {
 display: flex;
@@ -443,13 +423,10 @@ font-size: 16px;
 line-height: 1.89;
 color: var(--text-color);
 }
-.sample-img {
-    display: block;
-}
+
 .sample-border > .sample-titel {
     margin-left: 24px;
     padding-top: 20px;
-
 
 display: flex;
     font-family: inherit;
@@ -463,6 +440,5 @@ display: flex;
 
 .sample-border {
     border: 1px solid #EEEEEE;
-    
     border-top: none;
 }
