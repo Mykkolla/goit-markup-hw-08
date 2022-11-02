@@ -213,9 +213,7 @@ min-width:216px;
 }
 
 /*---------------------------------------section--2-----Особливості---*/
-
-  
-
+ 
 .specific-li > h3 {
     margin-bottom: 10px;
 
@@ -224,7 +222,7 @@ font-size: 14px;
 line-height: 1.14;
 color: var(--main-color);
 }
-.specific-li::before {
+/* .specific-li::before {
     content: "";
     display: block;
     width: 270px;
@@ -233,9 +231,7 @@ color: var(--main-color);
     border-radius: 4px;
 
     margin-bottom: 30px;
-
-}
-
+} */
 .specific-p {
     font-weight: 400;
 font-size: 14px;
@@ -247,11 +243,31 @@ color: var(--text-color);
     flex-wrap: wrap;
     gap: 30px;
 }
-
-
 .specific .specific-li {
     flex-basis: calc((100% - 90px)/4);
 }
+/* -----icons---------- */
+.section-icon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background: var(--portfolio-nav-button-color);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+
+    align-items: center;
+  justify-content: center;
+}
+
+.section-icon-svg {
+    width: 65px;
+    height: 70px;
+    margin: 0;
+           
+    background: var(--portfolio-nav-button-color); 
+}
+
 /*--------------------------------------section--3-----Чим ми займаємося---*/
 .section-doing {
     padding-top: 0;
@@ -308,7 +324,7 @@ color: var(--main-color);
 padding: 0;
 }
 .team-list-img > p  {
-    margin-bottom:30px;
+    margin-bottom:16px;
     margin-top: 0;
     padding:0;
 
@@ -335,6 +351,39 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-list .team-list-img {
     flex-basis: calc((100% - 90px)/4);
+}
+/* -----icons---------------- */
+.team-icons-ul {
+    display: flex;
+    justify-content: center;
+      
+    margin-bottom: 30px;
+ }
+
+.team-icons-li:not(:last-child) {
+    margin-right: 10px;
+}
+.team-icons-href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.team-icon-svg {
+    margin: 0;
+    fill: #AFB1B8; 
+}
+
+.team-icon-svg:hover, .team-icon-svg:focus {
+    fill: var(--hover-button-color);
+}
+.team-icons-href:hover, .team-icons-href:focus {
+    background-color: var(--accsent-color);
+    cursor: pointer;
+    /* fill: var(--hover-button-color); */
 }
 
 /* ------------------------------------------------------------Footer*/
