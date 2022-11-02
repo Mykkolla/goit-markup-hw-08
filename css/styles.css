@@ -224,6 +224,17 @@ font-size: 14px;
 line-height: 1.14;
 color: var(--main-color);
 }
+.specific-li::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background: var(--portfolio-nav-button-color);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+
+}
 
 .specific-p {
     font-weight: 400;
