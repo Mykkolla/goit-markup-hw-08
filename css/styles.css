@@ -367,6 +367,9 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* display: block;
+    margin-left: auto; */
+    color: #AFB1B8; 
 
     border-radius: 50%;
     width: 44px;
@@ -374,12 +377,9 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-icon-svg {
     margin: 0;
-    fill: #AFB1B8; 
+    fill: currentColor; 
 }
 
-.team-icon-svg:hover, .team-icon-svg:focus {
-    fill: var(--hover-button-color);
-}
 .team-icons-href:hover, .team-icons-href:focus {
     background-color: var(--accsent-color);
     cursor: pointer;
