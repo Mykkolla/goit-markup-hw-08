@@ -383,7 +383,7 @@ border-radius: 0px 0px 4px 4px;
 .team-icons-href:hover, .team-icons-href:focus {
     background-color: var(--accsent-color);
     cursor: pointer;
-    /* fill: var(--hover-button-color); */
+    color: var(--hover-button-color);
 }
 
 /* ------------------------------------------------------------Footer*/
