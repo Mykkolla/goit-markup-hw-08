@@ -66,7 +66,6 @@ img {
 .header {
     border: 1px solid #ECECEC;
 }
-
 .header-nav {
     display: flex;
     align-items:center;
@@ -78,14 +77,12 @@ img {
     display: flex;
     margin-left:93px;  
 }
-
 .contacts {
     display:flex;
     margin-left: auto;
 }
-
 .contacts > li:not(:last-child) {
-    margin-right:50px;
+    margin-right:30px;
 }
 .logo {
 font-family: 'Raleway', sans-serif;
@@ -94,14 +91,12 @@ font-size: 26px;
 line-height: 1.19;
 color: var(--accsent-color);
 } 
-
 .navigation-studio.navigation-studio-active {
     color: var(--accsent-color);
 }
 .navigation-portfolio.navigation-portfolio-active {
     color: var(--accsent-color);
 }
-   
 .logo-start {
     color:var(--logo-color);
 }
@@ -110,16 +105,12 @@ color: var(--accsent-color);
 padding-bottom: 32px;
 padding-top: 32px;
 
-    font-weight: 500;
+font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--main-color);
 }
-
-/* .navigation > li:not(:last-child) {
-    margin-right:50px;
-} --------alt-work-*/
 .navigation .navigation-li + .navigation-li {
     margin-left:50px;
 }
@@ -130,23 +121,28 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--text-color);
+
+}
+.navigation a:hover, .navigation a:focus {
+ color: var(--accsent-color);
 }
 
-.navigation a:hover, .contacts a:hover {
-color: var(--accsent-color);
-}/*---alt-work----*/
-.navigation a:focus, .contacts a:focus {
-    color: var(--accsent-color);
-}/*---alt-work----*/
+/* -----icons---------- */
 
-/* .navigation-studio:hover, .navigation-portfolio:hover, .navigation-contacts:hover, 
-.contacts-mail:hover, .contacts-tel:hover {
+.contact-i {
+    color: var(--text-color); 
+    
+}
+.contacts-icon {
+    /* margin: 0; */
+    fill: currentColor; 
+    margin-right: 10px;
+}
+
+.contact-i:hover, .contact-i:focus {
+    cursor: pointer;
     color: var(--accsent-color);
-} -------------work--*/
-/* .navigation-studio:focus, .navigation-portfolio:focus, .navigation-contacts:focus, 
-.contacts-mail:focus, .contacts-tel:focus {
-    color: var(--accsent-color);
-} -------------work--*/
+}
 
 /* -----------------------------------------------------------Header-finish*/
 
@@ -386,44 +382,80 @@ border-radius: 0px 0px 4px 4px;
     color: var(--hover-button-color);
 }
 
+/*-------------------------------------------------section--5-----Постійні клієнти---*/
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-h {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--main-color);
+
+margin-bottom: 50px;
+}
+.clients-ul {
+    display: flex;
+    justify-content: space-between;
+}
+.clients-href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+
+    border: 1px solid #AFB1B8;
+border-radius: 4px;
+
+    width: 170px;
+    height: 92px;
+}
+
+.clients-svg {
+  fill: currentColor; 
+}
+
+.clients-href:hover, .clients-href:focus {
+    cursor: pointer;
+    color: var(--accsent-color);
+    border: 1px solid var(--accsent-color);
+}
+
 /* ------------------------------------------------------------Footer*/
+
 .logo-footer {
     color: var(--hover-button-color);
-    
 }
 .footer-main {
     background-color: var(--fon-footer-h-color);
-    
 }
 .logo-mar {
     display: inline-block;
-    margin: 60px 0 20px 0;
+    max-width: 145px;
+padding-top: 60px;
+margin-bottom: 20px;
 }
 .address-str {
-    display: block;
-    font-style: normal;
+ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 color: var(--hover-button-color)
 }
 .address-mail, .address-tel {
-    display: block;
-    font-style: normal;
+font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
 }
-.address {
-    display: flex;
-    flex-direction:column;
-}
-
 .address .address-li:not(:last-child) {
     margin-bottom: 9px;
 }
-
 .address .address-li:last-child {
     padding-bottom: 64px;
 }
@@ -432,6 +464,69 @@ color: rgba(255, 255, 255, 0.6);
 }
 .address-mail:hover, .address-tel:hover, .address-str:hover {
     color: var(--accsent-color);
+}
+.footer-cont-div {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.footer-cont {
+    display: flex;
+    flex-direction: column;
+    max-width: 231px;
+}
+
+/* -----Приєднуйтесь------icons- */
+.footer-gl {
+    padding-top: 72px;
+    
+    font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color: var(--hover-button-color);
+
+margin-left: 70px;
+margin-bottom: 20px;
+
+}
+.footer-call {
+display: flex;
+flex-direction: column;
+
+
+}
+.footer-ul-icons {
+    display: flex;
+    
+ margin-left: 70px;
+ }
+
+.footer-icons-li:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-icons-href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-button-color); 
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.footer-icon-svg {
+    /* margin: 0; */
+    fill: currentColor; 
+}
+
+.footer-icons-href:hover, .footer-icons-href:focus {
+    background-color: var(--accsent-color);
+    cursor: pointer;
+    color: var(--hover-button-color);
 }
 
 /* ---------------------finish---index.html*/
@@ -486,8 +581,6 @@ color: var(--hover-button-color);
          
 }
  .sample-li {
-    
-   /* flex-basis:calc((100% - 60px)/3);  */
 flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
     /* width: calc((100% - 60px)/3); */
 }
