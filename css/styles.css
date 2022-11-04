@@ -115,7 +115,10 @@ color: var(--main-color);
     margin-left:50px;
 }
 .contacts-mail, .contacts-tel {
-    display: block;
+    display: flex;
+    align-items: center;
+
+
     font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -129,6 +132,7 @@ color: var(--text-color);
 
 /* -----icons---------- */
 
+
 .contact-i {
     color: var(--text-color); 
     
@@ -141,6 +145,7 @@ color: var(--text-color);
 
 .contact-i:hover, .contact-i:focus {
     cursor: pointer;
+    
     color: var(--accsent-color);
 }
 
