@@ -42,6 +42,8 @@
     background-color: var(--hover-button-color);
     letter-spacing: 0.03em;
     margin: 0;
+
+    padding-top: 80px;
         
 }
 
@@ -65,6 +67,13 @@ img {
 /* ------------------------------------------------------------Header-start*/
 .header {
     border: 1px solid #ECECEC;
+
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    background-color: var(--hover-button-color);
+    top: 0;
+    left: 0;
 }
 .header-nav {
     display: flex;
@@ -639,6 +648,8 @@ transform: translate(-50%, -50%);
 
 background-color: rgba(33, 150, 243, 0.9);
 opacity: 0;
+
+overflow: hidden;
 }
 
 .sample-li-p {
@@ -655,6 +666,7 @@ opacity: 0;
 .sample-li:hover .sample-li-overley {
 opacity: 1;
 /* animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0); */
+transition: all 250ms ease;
 }
 
 /* ---------------hover-artical---finish----- */
