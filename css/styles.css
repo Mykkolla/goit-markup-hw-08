@@ -6,6 +6,7 @@
     --hover-button-color:#FFFFFF;
     --portfolio-nav-button-color:#F5F4FA;
     --fon-footer-h-color:#2F303A;
+    --modal-vindow-color: #00000033;
 
     --items: 3;
     --indent: 30px;
@@ -568,6 +569,65 @@ flex-direction: column;
     cursor: pointer;
     color: var(--hover-button-color);
 }
+/* -------------------------------modal-windows-------------------- */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-vindow-color);
+}
+
+.backdrop.is-hidden {
+opacity: 0;
+pointer-events: none;
+}
+
+.modal-batton {
+    display: block;
+    margin-left: auto;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.modal {
+    position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+
+    min-height: 581px;
+    min-width: 521px;
+    background-color: var(--hover-button-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+
+.modal-batton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+   
+}
+.modal-svg {
+    margin: 0;
+    fill: currentColor; 
+}
+
+.modal-batton:hover, .modal-batton:focus {
+    /* background-color: var(--accsent-color); */
+    cursor: pointer;
+    /* color: var(--hover-button-color); */
+}
+
 
 /* ---------------------finish---index.html*/
 
@@ -633,6 +693,7 @@ flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
 
 .sample-li-img {
     position: relative;
+    overflow: hidden;
 }
 
 .sample-li-overley {
@@ -642,9 +703,10 @@ display: flex;
 width: 100%;
 height: 100%;
 
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+top: 0;
+left: 0;
+transform: translateY(100%);
+transition: transform 250ms ease;
 
 background-color: rgba(33, 150, 243, 0.9);
 opacity: 0;
@@ -665,8 +727,8 @@ overflow: hidden;
 
 .sample-li:hover .sample-li-overley {
 opacity: 1;
-/* animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0); */
-transition: all 250ms ease;
+animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+transform: translateY(0);
 }
 
 /* ---------------hover-artical---finish----- */
