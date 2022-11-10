@@ -26,7 +26,8 @@
         </svg>info@devstudio.com</a></li>
         <li class="contacts-li"><a href="tel:+380961111111" class="contacts-tel contact-i link"><svg class="contacts-icon" width="10px" height="16px">
             <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
-        </svg>+38 096 111 11 11</a></li>
+        </svg>+38 096 111 11 11</a>
+       </li>
     </ul>
     </nav>
         </header>
@@ -34,7 +35,7 @@
         <section class="section-main main-img">
             <div class="container main">
             <h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button type="button" class="main-butt">Замовити послугу</button>
+            <button type="button" class="main-butt" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <div class="container">
@@ -208,20 +209,13 @@
         </div>
         </div>
     </footer>
-    <!-- <script>
-        const { height: pageHeaderHeight } = document
-        .querySelector(".header")
-        .getBoundingClientRect();
-
-        document.body.style.paddingTop = '${pageHeaderHeight}px'
-    </script> -->
-
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden"  data-modal>
         <div class="modal">
-    <button type="button" class="modal-batton"><svg class="modal-svg" width="11px" height="11px">
+    <button type="button" class="modal-batton" data-modal-close><svg class="modal-svg" width="11px" height="11px">
         <use href="./images/svg/close-modal-btn.svg#icon-close-buttom"></use>
     </svg></button>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
