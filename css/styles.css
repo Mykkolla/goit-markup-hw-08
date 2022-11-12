@@ -163,10 +163,14 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--text-color);
-
 }
+.navigation a {
+    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
 .navigation a:hover, .navigation a:focus {
  color: var(--accsent-color);
+ 
 }
 
 /* -----icons---------- */
@@ -174,6 +178,7 @@ color: var(--text-color);
 
 .contact-i {
     color: var(--text-color); 
+    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
     
 }
 .contacts-icon {
@@ -236,7 +241,7 @@ color: var(--hover-button-color);
 
 .main-butt {
 border: 0;
-background: var(--accsent-color);
+background-color: var(--accsent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 padding:10px 32px;
@@ -248,10 +253,15 @@ line-height: 1.88;
 letter-spacing: 0.06em;
 color: var(--hover-button-color);
 min-width:216px;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .main-butt:hover, .main-butt:focus {
-    background: #188CE8;
+    background-color: #188CE8;
 }
 
 /*---------------------------------------section--2-----Особливості---*/
@@ -442,6 +452,9 @@ border-radius: 0px 0px 4px 4px;
     border-radius: 50%;
     width: 44px;
     height: 44px;
+
+    transition: background-color 250ms cubic-bezier(0.1, -0.6, 0.2, 0), 
+    color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .team-icon-svg {
     margin: 0;
@@ -485,6 +498,9 @@ border-radius: 4px;
 
     width: 170px;
     height: 92px;
+
+    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0), 
+    border 250ms cubic-bezier(0.1, -0.6, 0.2, 0), cursor 250ms cubic-bezier(0.1, -0.6, 0.2, 0) ;
 }
 
 .clients-svg {
@@ -516,7 +532,9 @@ margin-bottom: 20px;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-color: var(--hover-button-color)
+color: var(--hover-button-color);
+
+ transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .address-mail, .address-tel {
 font-style: normal;
@@ -524,6 +542,8 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
+
+transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .address .address-li:not(:last-child) {
     margin-bottom: 9px;
@@ -589,6 +609,9 @@ flex-direction: column;
     border-radius: 50%;
     width: 44px;
     height: 44px;
+
+    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0), 
+    background-color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .footer-icon-svg {
     /* margin: 0; */
@@ -688,14 +711,17 @@ letter-spacing: 0.03em;
 color: var(--main-color);
 border: 0;
 cursor: pointer;
-background: var(--portfolio-nav-button-color);
+background-color: var(--portfolio-nav-button-color);
 border-radius: 4px;
 min-width: 130px;
 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .job-but:hover, .job-but:focus {
-    background: var(--accsent-color);
+    background-color: var(--accsent-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 
 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
@@ -734,13 +760,18 @@ border-radius: 2px;
          
 }
  .sample-li {
+transition: box-shadow 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+
 flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
-    /* width: calc((100% - 60px)/3); */
+    
+
+
 }
 .sample-li:hover, .sample-li:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  
 }
 /* ---------------hover-artical---start----- */
 
@@ -759,7 +790,7 @@ height: 100%;
 top: 0;
 left: 0;
 transform: translateY(100%);
-transition: transform 250ms ease;
+transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 
 background-color: rgba(33, 150, 243, 0.9);
 opacity: 0;
@@ -777,12 +808,18 @@ overflow: hidden;
     
     padding: 63px 24px;
 }
-
+.sample-href {
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+}
 .sample-li:hover .sample-li-overley {
 opacity: 1;
-animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 transform: translateY(0);
 }
+.sample-href:focus .sample-li-overley {
+    opacity: 1;
+    transform: translateY(0);
+    }
 
 /* ---------------hover-artical---finish----- */
 
