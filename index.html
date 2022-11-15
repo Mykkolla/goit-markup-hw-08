@@ -216,42 +216,40 @@
     <button type="button" class="modal-batton" data-modal-close><svg class="modal-svg" width="11px" height="11px">
         <use href="./images/svg/close-modal-btn.svg#icon-close-buttom"></use>
     </svg></button>
-        <div class="form">
-        <form class="form-first">
-            <p class="form-titel">Залиште свої дані, ми вам передзвонимо</p>
+
+        <div class="form" role="group" aria-labelledby="contact-details-modal">
+        <form class="form-first js-speaker-form">
+            <p class="form-titel" id="contact-details-modal">Залиште свої дані, ми вам передзвонимо</p>
+          
+                <label class="form-first-mater" for="username">Ім'я</label>
+                  <input class="form-imput" type="text" name="username" id="username">
+                
+                <label class="form-first-mater" for="telephone">Телефон</label>
+                  <input class="form-imput" type="tel" name="telephone" id="telephone">
+                
+                <label class="form-first-mater" for="email">Пошта</label>
+                    <input class="form-imput" type="email" name="email" id="email">
+                             
+                <label class="form-first-mater" for="feedback">Коментар</label>
+                    <textarea class="form-first-text" id="feedback" name="feedback" rows="7" placeholder="Введіть текст"></textarea>
+                  
             
-            <div class="form-group" role="group" aria-labelledby="contact-details-head">
-                <label class="form-first-mater"><span class="form-text-p">Ім'я</span>
-                  <input class="form-imput" type="text" name="username" />
-                </label>
-                <label class="form-first-mater"><span class="form-text-p">Телефон</span>
-                  <input class="form-imput" type="tel" name="telephone" />
-                </label>
-                <label class="form-first-mater"><span class="form-text-p">Пошта</span>
-                    <input class="form-imput" type="email" name="email" />
-                  </label>
-            </div>
-
-            <div class="form-group form-text" role="group" aria-labelledby="language-head">
-                <label class="form-first-mater"><span class="form-text-p">Коментар</span>
-                    <textarea class="form-first-text" name="feedback" rows="7" placeholder="Введіть текст"></textarea>
-                  </label>
-            </div>
-
-            <div class="form-group form-group-con" role="group" aria-labelledby="newsletter-head">
-                <label>
-                <input class="form-groop-contract" type="checkbox" name="hobby" value="music"/>
-                      <span class="form-text-imp">Погоджуюся з розсилкою та приймаю</span>
+                <div class="contract-agr">
+                <input id="contract" class="form-groop-contract" type="checkbox" name="contract" value="agreement">
+                <svg class="contract-icon" width="15px" height="14px"><use a href='./images/svg/mdoda--send/4.svg#icon-contra'></use></svg>
+                <label class="form-text-imp" for="contract">Погоджуюся з розсилкою та приймаю
                     <span><a href=""  class="form-contract-blue">Умови договору</a></span> 
                 </label>
             </div>
-
+            
             <button class="form-button" type="submit">Відправити</button>
         </form>
     </div>
     </div>
 </div>
     <script src="/Js/modal.js"></script>
+    <script src="/Js/header-js.js"></script>
+    
 </body>
 </html>
 <!-- script src="/goit-markup-hw-05/Js/modal.js -->
