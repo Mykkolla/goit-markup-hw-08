@@ -729,6 +729,123 @@ border-radius: 4px;
     cursor: pointer;
        
 }
+/* ----------------form-modal------------ */
+.form-first {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.form-titel {
+        font-style: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--main-color);
+    margin-bottom: 12px;
+}
+.form-group {
+    width: 448px;
+    
+}
+.form-first-mater {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-first-text {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.form-first-text[placeholder] {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
+    
+}
+.form-imput {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.form-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    
+}
+.form-first-text {
+    width: 100%;
+}
+.form-text-p {
+    font-style: inherit;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+
+color: var(--text-color);
+margin-bottom: 4px;
+}
+.form-group-con {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-text-imp {
+ 
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+.form-contract-blue {
+    color: var(--accsent-color);
+}
+
+
+.form-button{
+    
+    
+    border: 0;
+    background-color: var(--accsent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding:10px 32px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--hover-button-color);
+    /* min-width:216px; */
+    max-width: 200px;
+    
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    animation: bottom-to-top 1000ms ease
+     600ms normal both; */
+    }
+
 
 
 /* ---------------------finish---index.html*/
