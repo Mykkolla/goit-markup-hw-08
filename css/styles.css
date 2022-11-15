@@ -761,6 +761,12 @@ border-radius: 4px;
     flex-direction: column;
     margin-bottom: 10px;
 }
+.form-imput {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+/* --modal--2 */
 .form-first-text {
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -776,11 +782,7 @@ border-radius: 4px;
     padding: 12px 16px;
     
 }
-.form-imput {
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-}
+
 .form-text {
     display: flex;
     flex-direction: column;
