@@ -804,6 +804,8 @@ width: 100%;
     
     color: rgba(117, 117, 117, 0.5);
     padding: 12px 16px;
+
+    resize: none;
     
 }
 
