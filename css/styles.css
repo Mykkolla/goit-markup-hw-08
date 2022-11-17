@@ -673,7 +673,7 @@ color: var(--hover-button-color);
 margin-right: 12px;
 
     padding-left: 16px;
-    background-color: var(--fon-footer-h-color);
+    background-color: transparent;
 
     width: 358px;
 height: 50px;
@@ -863,13 +863,15 @@ color: var(--text-color);
 
 .form-imput {
     height: 40px;
-    border-color:rgba(33, 33, 33, 0.2);
+    /* border-color:rgba(33, 33, 33, 0.2); */
+outline: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+border-color: transparent;
 
 width: 448px;
-padding-left: 40px;
+padding-left: 42px;
 
-transition: border 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+transition: outline 700ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 
 .form-first-mater {
@@ -886,21 +888,23 @@ transition: border 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
     fill: currentColor; 
 
     transform: translateY(-75%);
-    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    transition: color 700ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 /* --hover-- */
 
 .form-imput:hover, .form-imput:focus {
 cursor: pointer;
-border: 1px solid var(--accsent-color);
-border-radius: 4px;
-outline:none;
+/* border: 1px solid var(--accsent-color); */
+/* border-radius: 4px; */
+/* border-color: transparent; */
+/* outline: none; */
+outline:1px solid var(--accsent-color);
 
 }
-.form-imput:focus ~ .form-first-icon {
+.form-imput:focus + .form-first-icon {
     color: var(--accsent-color);
 }
-.form-imput:hover ~ .form-first-icon {
+.form-imput:hover + .form-first-icon {
     color: var(--accsent-color);
 }
 
@@ -911,6 +915,7 @@ border-radius: 4px;
 width: 100%;
 }
 .form-first-text{
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -932,7 +937,10 @@ color: inherit;
     border: 1px solid var(--accsent-color);
 }
 /* --form-3-- */
+
+
 .contract-agr {
+    user-select: none;
 position: relative;
 
     display: flex;
@@ -957,6 +965,7 @@ position: relative;
 }
 .form-contract-blue {
     color: var(--accsent-color);
+    text-underline-position:under;
 }
 
 
