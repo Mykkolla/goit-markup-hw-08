@@ -810,7 +810,7 @@ border-radius: 4px;
     margin-left: 490px;
     margin-right: 8px;
    
-   
+    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .modal-svg {
     margin: 0;
@@ -819,6 +819,7 @@ border-radius: 4px;
 
 .modal-batton:hover, .modal-batton:focus {
     cursor: pointer;
+    color: var(--accsent-color);
        
 }
 /* ----------------form-modal------------ */
@@ -859,53 +860,86 @@ color: var(--text-color);
     color: var(--main-color);
     margin-bottom: 12px;
 }
+
+
 .form-imput {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 
 width: 448px;
-margin-bottom: 10px;
-
 padding-left: 35px;
 }
+
+.form-first-mater {
+    margin-top: 10px;
+}
+
 .form-first-one {
     position: relative;
+    
 }
 .form-first-icon {
     position: absolute;
 
-    top: 11px;
-    left: 12px;
+    top: 75%;
+    left: 15px;
     fill: currentColor; 
+
+    transform: translateY(-75%);
+}
+/* --hover-- */
+
+.form-imput:hover, .form-imput:focus {
+cursor: pointer;
+/* border: 1px solid var(--accsent-color); */
+border-radius: 4px;
+border-color: var(--accsent-color);
 }
 
+.form-imput:focus ~ .form-first-icon {
+    color: var(--accsent-color);
+}
+.form-imput:hover ~ .form-first-icon {
+    color: var(--accsent-color);
+}
 
-/* --form--2 */
+/* .form-imput:not(:placeholder-shown) > .form-first-icon {
+    background-color: var(--logo-color);
+} */
+
+
+/* --form--2 */ 
 .form-first-text {
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 width: 100%;
 }
-.form-first-text[placeholder] {
+.form-first-text{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     
     color: rgba(117, 117, 117, 0.5);
     padding: 12px 16px;
 
     resize: none;
-    
+    margin-bottom: 20px;
 }
 
-.form-first-text {
-    resize: none;
-    margin-bottom: 20px;
+/* .form-first-text[textarea]::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
     
-}
+    color: var(--logo-color);
+    padding: 12px 16px;
+} */
+
 
 /* --form-3-- */
 .contract-agr {
