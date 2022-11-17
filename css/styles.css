@@ -653,10 +653,7 @@ flex-direction: column;
     color: var(--hover-button-color);
 }
 /* ------footer-form------ */
-.footer-form {
-    
-    
-}
+
 .form-footer-title {
     display: block;
     padding-top: 72px; 
@@ -684,6 +681,9 @@ height: 50px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
+outline: none;
+
+color:var(--hover-button-color)
 }
 .footer-input::placeholder {
     
@@ -735,7 +735,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: inline-block;
 }
 
-.footer-input-btn, .footer-input-btn:focus {
+.footer-input-btn:hover, .footer-input-btn:focus {
     background-color: #188CE8;
     cursor: pointer;
 }
@@ -829,8 +829,7 @@ border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-
+    
     padding-left: 40px;
     padding-right: 40px;
 
@@ -864,20 +863,20 @@ color: var(--text-color);
 
 .form-imput {
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-color:rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 
 width: 448px;
-padding-left: 35px;
+padding-left: 40px;
+
+transition: border 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 
 .form-first-mater {
     margin-top: 10px;
 }
-
 .form-first-one {
     position: relative;
-    
 }
 .form-first-icon {
     position: absolute;
@@ -887,27 +886,23 @@ padding-left: 35px;
     fill: currentColor; 
 
     transform: translateY(-75%);
+    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 /* --hover-- */
 
 .form-imput:hover, .form-imput:focus {
 cursor: pointer;
-/* border: 1px solid var(--accsent-color); */
+border: 1px solid var(--accsent-color);
 border-radius: 4px;
-border-color: var(--accsent-color);
-}
+outline:none;
 
+}
 .form-imput:focus ~ .form-first-icon {
     color: var(--accsent-color);
 }
 .form-imput:hover ~ .form-first-icon {
     color: var(--accsent-color);
 }
-
-/* .form-imput:not(:placeholder-shown) > .form-first-icon {
-    background-color: var(--logo-color);
-} */
-
 
 /* --form--2 */ 
 .form-first-text {
@@ -922,25 +917,20 @@ width: 100%;
     line-height: 1.17;
     letter-spacing: 0.01em;
     
-    color: rgba(117, 117, 117, 0.5);
+    
     padding: 12px 16px;
-
+color: inherit;
     resize: none;
     margin-bottom: 20px;
+    outline:none;
+    transition: border 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
-
-/* .form-first-text[textarea]::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    
-    color: var(--logo-color);
-    padding: 12px 16px;
-} */
-
-
+.form-first-text::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+.form-first-text:hover, .form-first-text:focus {
+    border: 1px solid var(--accsent-color);
+}
 /* --form-3-- */
 .contract-agr {
 position: relative;
@@ -952,7 +942,7 @@ position: relative;
 }
 .form-groop-contract {
     text-align: center;
-    /* background-color: #212121; */
+    
     margin-right: 8px;
 }
 
@@ -1015,15 +1005,14 @@ fill: currentColor;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--hover-button-color);
-    /* min-width:216px; */
-    max-width: 200px;
     
-    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    animation: bottom-to-top 1000ms ease
-     600ms normal both; */
-    }
+    min-width: 200px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 
+.form-button:hover, .form-button:focus {
+background-color: #188CE8;
+    } 
 
 
 /* ---------------------finish---index.html*/
@@ -1057,7 +1046,6 @@ border: 0;
 cursor: pointer;
 background-color: var(--portfolio-nav-button-color);
 border-radius: 4px;
-min-width: 130px;
 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),
