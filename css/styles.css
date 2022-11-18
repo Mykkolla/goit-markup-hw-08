@@ -969,11 +969,10 @@ position: relative;
     color: var(--accsent-color);
     text-underline-position:under;
 }
+/* appearance: none; */
 /* --agreement--1 */
  .form-groop-contract { 
-        
-    /* appearance: none; */
-    
+          
     outline: 1px solid transparent;
     outline-offset: -1px;
     border: 1px solid #212121;
