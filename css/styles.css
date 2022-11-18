@@ -972,9 +972,9 @@ position: relative;
 
 /* --agreement--1 */
  .form-groop-contract { 
-    appearance: none; 
-    appearance: none; 
 
+    appearance: none;
+    
     outline: 1px solid transparent;
     outline-offset: -1px;
     border: 1px solid #212121;
@@ -995,7 +995,7 @@ position: relative;
  } 
 
  .form-groop-contract:checked {
-    border-color: var(--accsent-color);
+    /* border-color: var(--accsent-color); */
     outline-color:var(--accsent-color);
     background-color: var(--accsent-color);
     background-size: 15px 16px;
