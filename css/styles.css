@@ -972,7 +972,7 @@ position: relative;
 
 /* --agreement--1 */
  .form-groop-contract { 
-    
+    appearance: none; 
     appearance: none; 
 
     outline: 1px solid transparent;
