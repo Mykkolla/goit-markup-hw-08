@@ -681,7 +681,7 @@ outline: 1px solid transparent;
     outline-offset: -1px;
     transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-input:focus {
+.footer-input:focus, .footer-input:hover {
 outline-color: var(--accsent-color);
 }
 .footer-input::placeholder {
@@ -862,7 +862,7 @@ color: var(--text-color);
 
 .form-imput {
     border: 1px solid rgba(33, 33, 33, 0.2);
-    /* height: 40px; */
+    
     padding-top: 14px;
     padding-bottom: 14px;
 outline: 1px solid rgba(33, 33, 33, 0.2);
@@ -951,9 +951,7 @@ position: relative;
 }
 .form-groop-contract {
     text-align: center;
-    
-    /* margin-right: 8px; */
-}
+    }
 
 .form-text-imp {
      font-style: inherit;
@@ -994,7 +992,7 @@ position: relative;
  } 
 
  .form-groop-contract:checked {
-    /* border-color: var(--accsent-color); */
+    
     outline-color:var(--accsent-color);
     background-color: var(--accsent-color);
     background-size: 15px 16px;
