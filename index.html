@@ -15,18 +15,18 @@
 </head>
 <body>
     <header class="header" data-header>
-        <nav class="container header-nav">
-        <a href="./index.html" lang="en" class="logo link list" >Web<span class="logo-start">Studio</span></a>
+        <nav class="container header__nav">
+        <a href="./index.html" lang="en" class="logo link" >Web<span class="header__logo">Studio</span></a>
     <ul class="navigation list">
-        <li class="navigation-li"><a href="" class="navigation-studio navigation-studio-active link">Студія</a></li>
-        <li class="navigation-li"><a href="./portfolio.html" class="navigation-portfolio link">Портфоліо</a></li>
-        <li class="navigation-li"><a href="" class="navigation-contacts link">Контакти</a></li>
+        <li class="navigation__li"><a href="./index.html" class="navigation__link navigation__link--active link">Студія</a></li>
+        <li class="navigation__li"><a href="./portfolio.html" class="navigation__link link">Портфоліо</a></li>
+        <li class="navigation__li"><a href="" class="navigation__link link">Контакти</a></li>
     </ul>
     <ul class="contacts list">
-        <li class="contacts-li"><a href="mailto:info@devstudio.com" class="contacts-mail contact-i link"><svg class="contacts-icon" width="16px" height="12px">
+        <li class="contacts__li"><a href="mailto:info@devstudio.com" class="contacts__mail link"><svg class="contacts__icon" width="16px" height="12px">
             <use href="./images/svg/symbol-defs.svg#icon-envelope-hover"></use>
         </svg>info@devstudio.com</a></li>
-        <li class="contacts-li"><a href="tel:+380961111111" class="contacts-tel contact-i link"><svg class="contacts-icon" width="10px" height="16px">
+        <li class="contacts__li"><a href="tel:+380961111111" class="contacts__tel link"><svg class="contacts__icon" width="10px" height="16px">
             <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
         </svg>+38 096 111 11 11</a>
        </li>
@@ -34,52 +34,52 @@
     </nav>
         </header>
     <main>
-        <section class="section-main main-img">
-            <div class="container main">
-            <h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button type="button" class="main-butt" data-modal-open>Замовити послугу</button>
+        <section class="hero">
+            <div class="container">
+            <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
+            <button type="button" class="hero__butt" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <div class="container">
         <section class="section">
             <h2 hidden>Особливості</h2>
-            <ul class="specific link list">
-                <li class="specific-li"><div class="section-icon"><svg class="section-icon-svg">
+            <ul class="specific list">
+                <li class="specific__li"><div class="specific__cards"><svg class="specific__icon">
                     <use href="./images/svg/symbol-defs.svg#icon-antenna-1"></use>
-                </svg></div><h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="specific-p">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
+                </svg></div><h3 class="specific__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="specific__p">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
 
-                <li class="specific-li"><div class="section-icon"><svg class="section-icon-svg">
+                <li class="specific__li"><div class="specific__cards"><svg class="specific__icon">
                     <use href="./images/svg/symbol-defs.svg#icon-clock-1"></use>
-                </svg></div><h3>ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="specific-p">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
+                </svg></div><h3 class="specific__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="specific__p">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
 
-                <li class="specific-li"><div class="section-icon"><svg class="section-icon-svg">
+                <li class="specific__li"><div class="specific__cards"><svg class="specific__icon">
                     <use href="./images/svg/symbol-defs.svg#icon-diagram-1"></use>
-                </svg></div><h3>ПЛАНУВАННЯ</h3>
-                <p class="specific-p">Так само консультація з широким активом значною мірою зумовлює.</p></li>
+                </svg></div><h3 class="specific__title">ПЛАНУВАННЯ</h3>
+                <p class="specific__p">Так само консультація з широким активом значною мірою зумовлює.</p></li>
 
-                <li class="specific-li"><div class="section-icon"><svg class="section-icon-svg">
+                <li class="specific__li"><div class="specific__cards"><svg class="specific__icon">
                     <use href="./images/svg/symbol-defs.svg#icon-astronaut-1"></use>
-                </svg></div><h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="specific-p">Значимість цих проблем настільки очевидна, що реалізація планових завдань. </p></li>
+                </svg></div><h3 class="specific__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="specific__p">Значимість цих проблем настільки очевидна, що реалізація планових завдань. </p></li>
             </ul>    
                 </section>
             </div>
             <div class="container">
-        <section class="section section-doing">
-                <h2 class="doing">Чим ми займаємося</h2>
-                <ul class="doing-img link list">
-                    <li class="doing-li"><div class="doing-li-op"><img src="./images/coding.jpg" alt="coding" width="370" height="294"><p class="doing-li-p">ДЕСКТОПНІ ДОДАТКИ</p></div></li>
-                    <li class="doing-li"><div class="doing-li-op"><img src="./images/mobiled.jpg" alt="mobile_programms" width="370" height="294"><p class="doing-li-p">МОБІЛЬНІ ДОДАТКИ</p></div></li>
-                    <li class="doing-li"><div class="doing-li-op"><img src="./images/crieting.jpg" alt="designe" width="370" height="294"><p class="doing-li-p">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div></li>
+        <section class="section doing">
+                <h2 class="doing__caption">Чим ми займаємося</h2>
+                <ul class="doing__list list">
+                    <li class="doing__li"><div class="doing__overlay"><img src="./images/coding.jpg" alt="coding" width="370" height="294"><p class="doing__descrip">ДЕСКТОПНІ ДОДАТКИ</p></div></li>
+                    <li class="doing__li"><div class="doing__overlay"><img src="./images/mobiled.jpg" alt="mobile_programms" width="370" height="294"><p class="doing__descrip">МОБІЛЬНІ ДОДАТКИ</p></div></li>
+                    <li class="doing__li"><div class="doing__overlay"><img src="./images/crieting.jpg" alt="designe" width="370" height="294"><p class="doing__descrip">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div></li>
                 </ul>
         </section>
     </div>
-    <section class="section container-team ">
+    <section class="section team ">
         <div class="container">
-        <h2 class="team-our">Наша команда</h2>
-                <ul class="team-list link list">
+        <h2 class="team__title">Наша команда</h2>
+            <ul class="team-list link list">
                     <li class="team-list-img"><img src="./images/team/productdesigner.jpg" alt="team1" width="270" height="260">
                     <h3>Ігор Дем'яненко</h3>
                     <p>Product Designer</p>
@@ -179,41 +179,45 @@
             </div>
             </section>
         </main>
-    <footer class="footer-main">
-        <div class="container footer-cont-div">
-            <div class="footer-cont">
-        <a href="./index.html" lang="en" class="logo logo-mar link list" >Web<span class="logo-footer">Studio</span></a>
-            <address class="address">
-            <ul class="list link">
-                <li class="address-li"><a href="https://goo.gl/maps/DKKHPqJNkNReEyp99" target="_blank" rel="noreferrer noopener" class="address-str list link">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="address-li"><a href="mailto:info@devstudio.com" class="address-mail list link">info@devstudio.com</a></li>
-                <li class="address-li"><a href="tel:+380961111111" class="address-tel list link">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </div>
-        <div class="footer-call">
-                <h2 class="footer-gl">ПРИЄДНУЙТЕСЬ</h2>
-            <ul class="footer-ul-icons list">
-                <li class="footer-icons-li"><a href="" class="footer-icons-href" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="footer-icon-svg" width="20px" height="20px">
+        <footer class="footer">
+            <div class="container footer__display">
+                <div class="address">
+            <a href="./index.html" lang="en" class="logo link">Web<span class="footer__logo">Studio</span></a>
+                <address class="address__list">
+                <ul class="list">
+                    <li class="address__li"><a href="https://goo.gl/maps/DKKHPqJNkNReEyp99" target="_blank" rel="noreferrer noopener"
+                        class="address__str link">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li class="address__li"><a href="mailto:info@devstudio.com" class="address__mail link">info@devstudio.com</a></li>
+                    <li class="address__li"><a href="tel:+380961111111" class="address__tel link">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+        <div class="join">
+                <h2 class="join__h2">ПРИЄДНУЙТЕСЬ</h2>
+            <ul class="join__ul list">
+                <li class="join__li"><a href="" class="join__link link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                    <svg class="join__svg" width="20px" height="20px">
                     <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
                 </svg></a></li>
-                <li class="footer-icons-li"><a href="" class="footer-icons-href" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="footer-icon-svg" width="20px" height="16px">
+                <li class="join__li"><a href="" class="join__link link" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                    <svg class="join__svg" width="20px" height="16px">
                     <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
                 </svg></a></li>
-                <li class="footer-icons-li"><a href="" class="footer-icons-href" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="footer-icon-svg" width="20px" height="20px">
+                <li class="join__li"><a href="" class="join__link link" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                    <svg class="join__svg" width="20px" height="20px">
                     <use href="./images/svg/symbol-defs.svg#icon-facebook-1"></use>
                 </svg></a></li>
-                <li class="footer-icons-li"><a href="" class="footer-icons-href" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="footer-icon-svg" width="20px" height="20px">
+                <li class="join__li"><a href="" class="join__link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                    <svg class="join__svg" width="20px" height="20px">
                     <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
                 </svg></a></li>
             </ul>
         </div>
-        <form class="footer-form js-speaker-form">
-            <b class="form-footer-title">ПІДПИШИТЬСЯ НА РОЗСИЛКУ</b>
+        <form class="subscribe js-speaker-form">
+            <b class="subscribe__title">ПІДПИШИТЬСЯ НА РОЗСИЛКУ</b>
             <label>
-            <input class="footer-input" type="email" name="email-footer" id="email-footer" placeholder="E-mail"></label>
-            <button type="submit" class="footer-input-btn">Підписатися</button>
-                
+            <input class="subscribe-input" type="email" name="email-footer" id="email-footer" placeholder="E-mail"></label>
+            <button type="submit" class="subscribe__btn">Підписатися</button>
         </form>
         </div>
     </footer>
