@@ -1,0 +1,19 @@
+.sample {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;  
+         
+}
+.sample__li {
+    transition: box-shadow 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    
+    flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
+        
+    
+    }
+    .sample__li:hover, .sample__li:focus {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+      
+    }

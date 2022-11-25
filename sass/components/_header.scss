@@ -1,0 +1,101 @@
+.header {
+    border: 1px solid var(--header-border-color);
+    
+    width: 100%;
+    min-height: 80px;
+    background-color: var(--hover-button-color);
+}
+.header__nav {
+    display: flex;
+    align-items:center;
+}
+
+.navigation {
+    display: flex;
+    margin-left:93px;  
+}
+.navigation__li:not(:last-child) {
+    margin-right:50px;
+}
+.navigation__link {
+    display: block;
+padding-bottom: 32px;
+padding-top: 32px;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-color);
+
+transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0), 
+    transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+.navigation__link:hover, .navigation__link:focus {
+    color: var(--accsent-color);
+    transform: scale(1.5);
+}
+.navigation__link--active {
+    color: var(--accsent-color);
+    position: relative;
+}
+
+/* -----bottom-line---- */
+
+.navigation__link--active::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 4px;
+    
+    bottom: 13px;
+    
+    right: 0;
+    margin: 0;
+    padding: 0;
+    
+    background-color: var(--accsent-color);
+    border-radius: 2px;
+    
+    transition: width 0.5s, left 0.5s;
+    }
+    .navigation__link--active:hover::after {
+        width: 100%;
+        left: 0;
+    }
+/* contacts */
+.contacts {
+    display:flex;
+    margin-left: auto;
+}
+.contacts__li:not(:last-child) {
+    margin-right:30px;
+}
+.contacts__mail, .contacts__tel {
+display: flex;
+align-items: center;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-color);
+
+    transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0),
+    transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+.contacts__icon {
+    fill: currentColor; 
+    margin-right: 10px;
+}
+.contacts__mail:hover, .contacts__mail:focus {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: var(--accsent-color);
+}
+.contacts__tel:hover, .contacts__tel:focus {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: var(--accsent-color);
+}

@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --accsent-color: #2196F3;
     --main-color: #212121;
     --text-color:#757575;
@@ -7,10 +7,11 @@
     --portfolio-nav-button-color:#F5F4FA;
     --fon-footer-h-color:#2F303A;
     --modal-vindow-color: #00000033;
+    --header-border-color: #ECECEC;
+    --hero-btn-acs-color: #188CE8;
 
     --items: 3;
     --indent: 30px;
-
 
     --header-indx:10;
  }
@@ -34,6 +35,9 @@
  h1, h2, h3, p {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
  body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
@@ -54,11 +58,11 @@ img {
     display: block;
     max-width: 100%;
 }
-
+ */
 
 /* ------------------------------------------------------------Header-start*/
-.header {
-    border: 1px solid #ECECEC;
+/* .header {
+    border: 1px solid var(--header-border-color);
     
     width: 100%;
     min-height: 80px;
@@ -67,9 +71,9 @@ img {
 .header__nav {
     display: flex;
     align-items:center;
-}
+} */
 /* logo */
-.logo {
+/* .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -79,10 +83,10 @@ img {
     } 
 .header__logo {
     color:var(--logo-color);
-}
+} */
  /* navigation */
 
-.navigation {
+/* .navigation {
     display: flex;
     margin-left:93px;  
 }
@@ -114,7 +118,7 @@ transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0),
 
 /* -----bottom-line---- */
 
-.navigation__link--active::after {
+/* .navigation__link--active::after {
     position: absolute;
     content: "";
     width: 0;
@@ -136,14 +140,14 @@ transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0),
         left: 0;
     }
 /* contacts */
-.contacts {
+/* .contacts {
     display:flex;
     margin-left: auto;
 }
 .contacts__li:not(:last-child) {
     margin-right:30px;
-}
-.contacts__mail, .contacts__tel {
+} */
+/* .contacts__mail, .contacts__tel {
 display: flex;
 align-items: center;
 
@@ -155,9 +159,9 @@ color: var(--text-color);
 
     transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0),
     transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
-}
+} */
 
-.contacts__icon {
+/* .contacts__icon {
     fill: currentColor; 
     margin-right: 10px;
 }
@@ -170,12 +174,12 @@ color: var(--text-color);
     cursor: pointer;
     transform: scale(1.2);
     color: var(--accsent-color);
-}
+}  */
 /* -----------------------------------------------------------Header-finish*/
 
 /*---------------------------------section--1-----hero-----------*/
 
-.hero {
+/* .hero {
     padding: 200px 0;
 
     display: block;
@@ -195,9 +199,9 @@ color: var(--text-color);
     background-size: cover;
     text-align: center;
 
-}
-.hero__title {
-padding: 0;/* -------*/
+} */
+/* .hero__title {
+padding: 0;
 margin-bottom:40px;
 
 font-weight: 900;
@@ -209,8 +213,8 @@ color: var(--hover-button-color);
 
 animation: top-to-bottom 1000ms ease
  200ms normal both;
-}
-.hero__butt {
+} */
+/* .hero__butt {
 border: 0;
 background-color: var(--accsent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -232,11 +236,11 @@ animation: bottom-to-top 1000ms ease
    
 }
 .hero__butt:hover, .hero__butt:focus {
-    background-color: #188CE8;
-}
+    background-color: var(--hero-btn-acs-color);
+} */
 
 /*---------------------------------------section--2-----Особливості---*/
-.specific {
+/* .specific {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -269,21 +273,21 @@ color: var(--text-color);
 
     align-items: center;
   justify-content: center;
-}
+} */
 /* -icons- */
-.specific__icon {
+/* .specific__icon {
     width: 65px;
     height: 70px;
     margin: 0;
            
     background: var(--portfolio-nav-button-color); 
-}
+} */
 
 /*------------------------------------------section--3-----Чим ми займаємося---*/
-.doing {
+/* .doing {
     padding-top: 0;
-}
-.doing__caption {
+} */
+/* .doing__caption {
     margin-bottom:30px;
 
     font-weight: 700;
@@ -300,13 +304,13 @@ color: var(--text-color);
 }
 .doing__li {
     flex-basis: calc((100% - 60px)/3);
-}
+} */
 
 /* -----text-overlay---- */
-.doing__overlay {
+/* .doing__overlay {
     position: relative;
-}
-.doing__descrip {
+} */
+/* .doing__descrip {
     position: absolute;
     display: flex;
     width: 100%;
@@ -323,13 +327,13 @@ font-size: 14px;
 line-height: 16px;
 text-align: center;
 color: var(--hover-button-color);
-}
+} */
 
 /*-------------------------------------------------section--4-----ourteam---*/
-.team {
+/* .team {
     background-color: var(--portfolio-nav-button-color);
- }
-.team__title {
+ } */
+/* .team__title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -343,8 +347,8 @@ color: var(--main-color);
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-.team__img {
+} */
+/* .team__img {
     background: var(--hover-button-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -372,16 +376,16 @@ padding: 0;
     text-align: center;
     color: var(--text-color);
 
-}
+} */
 
 /* -----icons----- */
-.socialnet {
+/* .socialnet {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
- }
+ } */
 
-.socialnet__li:not(:last-child) {
+/* .socialnet__li:not(:last-child) {
     margin-right: 10px;
 }
 .socialnet__link {
@@ -406,10 +410,10 @@ padding: 0;
     background-color: var(--accsent-color);
     cursor: pointer;
     color: var(--hover-button-color);
-}
+} */
 
 /*-------------------------------------------------section--5-----Постійні клієнти---*/
-.clients {
+/* .clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -452,10 +456,10 @@ border-radius: 4px;
     cursor: pointer;
     color: var(--accsent-color);
     border: 1px solid var(--accsent-color);
-}
+} */
 
 /* ------------------------------------------------------------Footer*/
-.footer {
+/* .footer {
     background-color: var(--fon-footer-h-color);
 }
 .footer__display {
@@ -464,13 +468,13 @@ border-radius: 4px;
     padding-bottom: 60px;
     padding-top: 60px;
     
-}
-.footer__logo {
+} */
+/* .footer__logo {
 color: var(--hover-button-color);
-}
+} */
 
 /* adress */
-.address__li:first-child {
+/* .address__li:first-child {
     margin-top: 20px;
 }
 .address__li:not(:last-child) {
@@ -499,10 +503,10 @@ transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .address__mail:hover, .address__tel:hover, .address__str:hover {
     color: var(--accsent-color);
-}
+} */
 
 /* ----Приєднуйтесь--- */
-.join {
+/* .join {
     margin-left: 70px;
 }
 .join__h2 {
@@ -541,9 +545,9 @@ fill: currentColor;
     background-color: var(--accsent-color);
     cursor: pointer;
     color: var(--hover-button-color);
-}
+} */
 /* ---footer-form--- */
-.subscribe {
+/* .subscribe {
     margin-left: 93px;
 }
 .subscribe__title {
@@ -626,11 +630,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #188CE8;
     cursor: pointer;
 }
-
+ */
 
 /* ================================================================= */
 /* -------------------------------modal-windows-------------------- */
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -671,7 +675,7 @@ border-radius: 4px;
     
     justify-content: center;
     align-items: center;
-    background: #FFFFFF;
+    background: var(--hover-button-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     border-radius: 50%;
@@ -692,10 +696,10 @@ border-radius: 4px;
     cursor: pointer;
     color: var(--accsent-color);
        
-}
+} */
 /* ----------------form-modal--------------------------------------------- */
 /* --general- */
-.form-first {
+/* .form-first {
     
     display: flex;
     flex-direction: column;
@@ -717,9 +721,9 @@ letter-spacing: 0.01em;
 
 color: var(--text-color);
 
-}
+} */
 /* ---form-1 */
-.form-titel {
+/* .form-titel {
         font-style: inherit;
     font-weight: 700;
     font-size: 20px;
@@ -729,10 +733,10 @@ color: var(--text-color);
     
     color: var(--main-color);
     margin-bottom: 12px;
-}
+} */
 
 
-.form-imput {
+ /* .form-imput {
     border: 1px solid rgba(33, 33, 33, 0.2);
     
 padding-top: 10px;
@@ -740,16 +744,16 @@ padding-bottom: 10px;
 
 outline: 1px solid rgba(33, 33, 33, 0.2);
 outline-offset: -1px;
-border-radius: 4px;
+border-radius: 4px; */
 /* border-color: transparent; */
 
-width: 448px;
+/* width: 448px;
 padding-left: 42px;
 
 transition: outline-color 300ms cubic-bezier(0.1, -0.6, 0.2, 0), border 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
-}
+}  */
 
-.form-first-mater {
+/* .form-first-mater {
     margin-top: 10px;
 }
 .form-first-one {
@@ -764,9 +768,9 @@ transition: outline-color 300ms cubic-bezier(0.1, -0.6, 0.2, 0), border 250ms cu
 
     transform: translateY(-75%);
     transition: color 300ms cubic-bezier(0.1, -0.6, 0.2, 0);
-}
+} */ 
 /* --hover-- */
-
+/* 
 .form-imput:focus, .form-imput:hover {
 cursor: pointer;
 outline-color:var(--accsent-color);
@@ -776,15 +780,15 @@ outline-color:var(--accsent-color);
 }
 .form-imput:hover + .form-first-icon {
     color: var(--accsent-color);
-}
+} */
 
 /* --form--2 */ 
-.form-first-text {
+/* .form-first-text {
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 width: 100%;
-}
-.form-first-text{
+} */
+/* .form-first-text{
     display: block;
     font-style: normal;
     font-weight: 400;
@@ -808,12 +812,12 @@ border-radius: 4px;
 }
 .form-first-text:focus, .form-first-text:hover {
     outline-color: var(--accsent-color);
-}
+} */
 
 /* --form-3-- */
 
 
-.contract-agr {
+/* .contract-agr {
     user-select: none;
 position: relative;
 
@@ -838,10 +842,10 @@ position: relative;
 .form-contract-blue {
     color: var(--accsent-color);
     text-underline-position:under;
-}
+} */
 
 /* --agreement--1 */
- .form-groop-contract { 
+ /* .form-groop-contract { 
 
     appearance: none;
     
@@ -870,7 +874,7 @@ position: relative;
     background-color: var(--accsent-color);
     background-size: 15px 16px;
     
-}
+} */
 /* .form-groop-contract:hover, .form-groop-contract:focus {
     cursor: pointer;
 }  */
@@ -902,7 +906,7 @@ border-radius: 2px;
     opacity: 1;
 } */
 /* --butn-- */
-.form-button{
+/* .form-button{
     margin: 0 auto;
     display: block;
     
@@ -924,8 +928,8 @@ border-radius: 2px;
  }
 
 .form-button:hover, .form-button:focus {
-background-color: #188CE8;
-    } 
+background-color: var(--hero-btn-acs-color);
+    }  */
 
 /* ---------------------finish---index.html*/
 
@@ -937,7 +941,7 @@ background-color: #188CE8;
 /* -Навігація */
 
 
- .job {
+ /* .job {
     display: flex;
     justify-content: center;
     margin: 30px 0 50px 0;
@@ -973,11 +977,11 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 color: var(--hover-button-color);
-}
+} */
 
 /* ------портфоліо--sample-- */
 
-.sample {
+/* .sample {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;  
@@ -995,10 +999,10 @@ flex-basis:calc((100% - var(--indent) * (var(--items) - 1))/var(--items));
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
   
-}
+} */
 /* ---------------hover-artical---start----- */
 
-.sample__signature {
+/* .sample__signature {
     position: relative;
     overflow: hidden;
 }
@@ -1014,7 +1018,7 @@ left: 0;
 transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 background-color: rgba(33, 150, 243, 0.9);
-/* opacity: 0; */
+
 overflow: hidden;
 }
 
@@ -1032,17 +1036,17 @@ overflow: hidden;
     transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 .sample__link:hover .sample__overley {
-/* opacity: 1; */
+
 transform: translateY(0);
 }
 .sample__link:focus .sample__overley {
-    /* opacity: 1; */
+   
     transform: translateY(0);
-    }
+    } 
 
 /* ---------------hover-artical---finish----- */
 
-.sample__works {
+/* .sample__works {
 display: flex;
 margin:4px 0 20px 24px;
 
@@ -1050,9 +1054,9 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.89;
 color: var(--text-color);
-}
+} */
 
-.sample__title {
+/* .sample__title {
     margin-left: 24px;
     padding-top: 20px;
 
@@ -1070,12 +1074,12 @@ display: flex;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
-
+ */
 
 
 /* ----------Animation----------- */
 
-@keyframes top-to-bottom {
+/* @keyframes top-to-bottom {
 0% { opacity: 0;
     transform: translateY(-30%);
 }
@@ -1094,5 +1098,5 @@ display: flex;
     100%{opacity: 1;
         transform: translateY(0);
     }
-    }
+    } */
 
