@@ -30,10 +30,12 @@ color:var(--hover-button-color);
 outline: 1px solid transparent;
 outline-offset: -1px;
 transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:focus, &:hover {
+    outline-color: var(--accsent-color);
+    }
 }
-.subscribe-input:focus, .subscribe-input:hover {
-outline-color: var(--accsent-color);
-}
+
 .subscribe-input::placeholder {
     font-style: normal;
     font-weight: 400;
@@ -66,19 +68,21 @@ color: var(--hover-button-color);
 
 padding-right: 52px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover, &:focus {
+    background-color: #188CE8;
+    cursor: pointer;
+}
 }
 .subscribe__btn::after {
     content: '';
     position: absolute;
     top:13px;
     right: 28px;
-    background-image: url(../images/svg/mdoda--send/orig/iconsend.svg);
+    background-image: url(../images/svg/mdoda__send/orig/iconsend.svg);
     width: 24px;
     height: 24px;
  display: inline-block;
 }
-.subscribe__btn:hover, .subscribe__btn:focus {
-    background-color: #188CE8;
-    cursor: pointer;
-}
+
 
