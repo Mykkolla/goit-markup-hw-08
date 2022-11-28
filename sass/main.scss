@@ -3,6 +3,7 @@
 @import './utils/variables';
 // @import './utils/visually-hidden';
 @import './utils/placeholders';
+@import './utils/breakpoints';
 @import './utils/mixins';
 
 // base styles
@@ -15,7 +16,6 @@
 @import './components/section';
 @import './components/container';
 @import './components/header';
-// @import './components/btn';
 
 @import './components/logo';
 @import './components/hero';

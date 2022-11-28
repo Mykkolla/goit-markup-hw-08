@@ -8,6 +8,16 @@
 .header__nav {
     display: flex;
     align-items:center;
+
+    // @include respond-to('small') {
+    //         width: 480px;}
+    //         @include respond-to('medium') {
+    //             width: 480px;}
+    //             @include respond-to('medium') {
+    //                 display: flex;
+    //                 align-items:center;
+    //                 width: 480px;}
+            
 }
 
 .navigation {
