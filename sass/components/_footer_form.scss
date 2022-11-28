@@ -75,8 +75,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 .subscribe__btn::after {
-    content: '';
-    position: absolute;
+    @include pseudo;
     top:13px;
     right: 28px;
     background-image: url(../images/svg/mdoda__send/orig/iconsend.svg);
