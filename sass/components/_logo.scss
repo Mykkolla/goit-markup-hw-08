@@ -8,11 +8,18 @@
     line-height: 1.19;
     color: var(--accsent-color);
     display: flex;
+
+    
+    @media screen and (max-width: 767px) {
+        justify-content: center;}
     } 
 .header__logo {
     color:var(--logo-color);
 }
 /* footer-logo */
 .footer__logo {
+    
     color: var(--hover-button-color);
+   
+   
     }

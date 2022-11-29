@@ -15,6 +15,26 @@ color: var(--main-color);
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        width: 486px;
+        display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;}
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 768px;
+        display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;}
+    @media screen and (min-width: 1200px) {
+            width: 1200px;
+            display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+        }
 }
 .team__img {
     background: var(--hover-button-color);
