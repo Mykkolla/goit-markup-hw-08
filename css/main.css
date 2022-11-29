@@ -277,6 +277,7 @@ body {
   background-color: var(--hover-button-color);
   letter-spacing: 0.03em;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .link {
@@ -477,6 +478,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .header__nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .navigation {
   display: none;
@@ -620,6 +628,16 @@ img {
   color: var(--accsent-color);
 }
 
+.header__menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 /* header-logo */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -636,6 +654,19 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
@@ -662,7 +693,6 @@ img {
   background-size: cover;
   text-align: center;
 }
-
 .hero__title {
   padding: 0; /* -------*/
   margin-bottom: 40px;
@@ -785,6 +815,11 @@ img {
 
 .doing {
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
 }
 
 .doing__caption {
