@@ -4,8 +4,8 @@
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+        line-height: 1.17;
     color: var(--accsent-color);
     display: flex;
 
@@ -16,11 +16,11 @@
         font-size: 24px;
         line-height: 1.17;}
     
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 1200px) {
         justify-content: center;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 1.17;}
+    font-size: 26px;
+    line-height: 1.19;}
     } 
 
 
