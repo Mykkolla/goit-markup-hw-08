@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
     }
-    @media screen and (min-width: 768px) and (max-width: 800px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,18 +28,19 @@ color: var(--hover-button-color);
 justify-content: center;
 margin-top: 60px;
  }
- @media screen and (min-width: 768px) and (max-width: 800px) {
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
 justify-content: center;
 margin-top: 60px;
  }
 }
 .subscribe__lable {
+    
     @media screen and (max-width: 767px) {
         display: flex;
     justify-content: center;
     }
-    @media screen and (min-width: 768px) and (max-width: 800px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
     justify-content: center;
     }
@@ -110,7 +111,7 @@ margin: auto;
 margin-top: 20px;
 
  }
- @media screen and (min-width: 768px) and (max-width: 800px) {
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
 margin: auto;
 margin-top: 20px;
