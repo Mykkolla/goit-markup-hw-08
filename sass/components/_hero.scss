@@ -19,25 +19,39 @@
     background-size: cover;
     text-align: center;
 
-    // @media screen and  (max-width: 767px) {
-    //             margin-left: auto;
-    //             margin-right: auto;
-    //     }
+    // @media screen and (min-width: 486px) and (max-width: 767px) {
+                
+    //     width: 450px;}
 
 }
 .hero__title {
-padding: 0;/* -------*/
+padding: 0;
 margin-bottom:40px;
 
 font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
+font-size: 26px;
+line-height: 1.62;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--hover-button-color);
 
 animation: top-to-bottom 1000ms ease
  200ms normal both;
+
+ @media screen and (min-width: 1200px)  {
+    padding: 0;
+    margin-bottom:40px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hover-button-color);
+    
+    animation: top-to-bottom 1000ms ease
+     200ms normal both;    
+        }
 }
 .hero__butt {
 border: 0;

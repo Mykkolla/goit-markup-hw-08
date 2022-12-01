@@ -1,4 +1,6 @@
 .header {
+
+    position: relative;
     border: 1px solid var(--header-border-color);
     
     width: 100%;
@@ -17,24 +19,34 @@
             padding: 0;}
 }
 .header__nav {
-    display: flex;
-            align-items:center;
-
-            @media screen and (min-width: 0px) and (max-width: 767px) {
+display: flex;
+align-items:baseline;
+    @media screen and (min-width: 0px) and (max-width: 767px) {
                 
-            justify-content: space-between;}
+    justify-content: space-between;}
             
 }
+// .header__hid {
+//     display: flex;
+//     align-items:center;
+//     @media screen and (min-width: 0px) and (max-width: 767px) {
+                
+//         display: none;
+//         justify-content: space-between;}
+//         @media screen and (min-width: 1200px) {
+//             align-items:baseline;
+//         }
+// }
+
 
 .navigation {
-    display: none;
-    width: 480px;
+    
     @extend %list;
     // display: flex;
     // margin-left:93px;  
    
             @media screen and (min-width: 768px) {
-                width: 768px;
+                // width: 768px;
                 display: flex;
                 margin-left: 80px;  }
                 @media screen and (min-width: 1200px)
@@ -101,15 +113,14 @@ transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 /* contacts */
 .contacts {
     @extend %list;
-    display:none;
-    // margin-left: auto;
-
+       
     @media screen and (min-width: 768px) {
         display:block;
-        margin-left: 80px;  }
+        margin-left: 96px;  }
         @media screen and (min-width: 1200px) {
+            margin-left: 315px;
             display:flex;
-            margin-left: auto; }
+             }
 }
 
 .contacts__li:not(:last-child) {
@@ -161,9 +172,7 @@ color: var(--text-color);
         display: none;  }
     
 }
-// .menu__svg {
-   
-// }
+
 .menu__close {
     display: none;
 }
@@ -174,3 +183,36 @@ color: var(--text-color);
 .header__menu.is-open .menu__open {
     display: none;
 }
+.mobile__menu {
+    &.is-open {
+        opacity: 1;
+    }
+    
+    
+@media screen and (max-width: 767px) {
+        opacity: 0;
+        z-index: 2;
+        background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+     0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    
+padding-bottom: 48px;
+padding-left: 40px;
+    
+transition: opacity 250ms cubic-bezier(0.1, -0.6, 0.2, 0);}
+
+ @media screen and (min-width: 768px) {
+            
+            display: flex;
+    align-items:center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            align-items:baseline;
+        }
+    }
