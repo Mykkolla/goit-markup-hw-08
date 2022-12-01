@@ -537,8 +537,10 @@ img {
   }
 }
 
-.navigation__li:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .navigation__li:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .navigation__link {
@@ -559,6 +561,13 @@ img {
   color: var(--accsent-color);
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+@media screen and (max-width: 767px) {
+  .navigation__link {
+    font-size: 40px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+  }
 }
 
 .navigation__link--active {
@@ -588,6 +597,19 @@ img {
 }
 
 /* contacts */
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-top: 302px;
+    margin-bottom: 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
@@ -629,6 +651,23 @@ img {
   transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0), transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
   transition: color 250ms cubic-bezier(0.1, -0.6, 0.2, 0), transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0), -webkit-transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
 }
+@media screen and (max-width: 767px) {
+  .contacts__mail, .contacts__tel {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__tel {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    color: #2196F3;
+  }
+}
 
 .contacts__icon {
   fill: currentColor;
@@ -647,6 +686,19 @@ img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: var(--accsent-color);
+}
+
+.menu__svg {
+  fill: var(--logo-color);
+  -webkit-transition: fill 250ms cubic-bezier(0.1, -0.6, 0.2, 0), -webkit-transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+  transition: fill 250ms cubic-bezier(0.1, -0.6, 0.2, 0), -webkit-transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+  transition: fill 250ms cubic-bezier(0.1, -0.6, 0.2, 0), transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+  transition: fill 250ms cubic-bezier(0.1, -0.6, 0.2, 0), transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0), -webkit-transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+.menu__svg:hover, .menu__svg:focus {
+  fill: var(--accsent-color);
+  cursor: pointer;
 }
 
 .header__menu {
@@ -676,24 +728,33 @@ img {
   display: none;
 }
 
-.mobile__menu.is-open {
-  opacity: 1;
-}
 @media screen and (max-width: 767px) {
   .mobile__menu {
     opacity: 0;
-    z-index: 2;
+    z-index: 1;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     position: absolute;
-    top: 100%;
+    top: -100%;
     left: 0;
     width: 100%;
     padding-bottom: 48px;
     padding-left: 40px;
     -webkit-transition: opacity 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
     transition: opacity 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    transition: -webkit-transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    transition: transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0), -webkit-transform 250ms cubic-bezier(0.1, -0.6, 0.2, 0);
+    -webkit-transform: translate(-1000px, 0);
+            transform: translate(-1000px, 0);
+  }
+  .mobile__menu.is-open {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    top: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -712,6 +773,32 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
+}
+
+.mobali__socisal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 767px) {
+  .mobali__socisal {
+    display: none;
+  }
+}
+
+.mobali__li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobali__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accsent-color);
 }
 
 /* header-logo */
