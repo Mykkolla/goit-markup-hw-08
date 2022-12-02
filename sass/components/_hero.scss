@@ -10,8 +10,8 @@
     
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), 
-    url(../images/hero.jpg);
-  
+    url(../images/hero.webp);
+    background-size: 1600px 600px;
 
     
     background-repeat: no-repeat;
@@ -24,6 +24,16 @@
     //     width: 450px;}
 
 }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+      background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../images/hero@2x.webp);
+    }
+  }
+
+
 .hero__title {
 padding: 0;
 margin-bottom:40px;
