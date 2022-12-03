@@ -107,85 +107,157 @@
             </div>
             <section class="section doing">
             <div class="container">
-                <h2 class="doing__caption">Чим ми займаємося</h2>
+                <h4 class="doing__caption">Чим ми займаємося</h4>
                 <ul class="doing__list list">
-                    <li class="doing__li"><div class="doing__overlay"><img src="./images/coding.jpg" alt="coding" width="370" height="294"><p class="doing__descrip">ДЕСКТОПНІ ДОДАТКИ</p></div></li>
-                    <li class="doing__li"><div class="doing__overlay"><img src="./images/mobiled.jpg" alt="mobile_programms" width="370" height="294"><p class="doing__descrip">МОБІЛЬНІ ДОДАТКИ</p></div></li>
-                    <li class="doing__li"><div class="doing__overlay"><img src="./images/crieting.jpg" alt="designe" width="370" height="294"><p class="doing__descrip">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div></li>
+                    <li class="doing__li"><div class="doing__overlay">
+                        <img srcset="./images/doing/coding_img.jpg 1x, ./images/doing/coding_img@2x.jpg 2x"
+                        src="./images/doing/coding.jpg" 
+                        alt="coding" width="370" height="294">
+
+                        <p class="doing__descrip">ДЕСКТОПНІ ДОДАТКИ</p></div></li>
+                    <li class="doing__li"><div class="doing__overlay">
+                        <img srcset="./images/doing/mobiled_img.jpg 1x, ./images/doing/mobiled_img@2x.jpg 2x"
+                        src="./images/doing/mobiled.jpg" alt="mobile_programms" width="370" height="294">
+
+                        <p class="doing__descrip">МОБІЛЬНІ ДОДАТКИ</p></div></li>
+                    <li class="doing__li"><div class="doing__overlay">
+                        <img srcset="./images/doing/crieting_img.jpg 1x, ./images/doing/crieting_img@2x.jpg 2x"
+                        src="./images/doing/crieting.jpg" 
+                        alt="designe" width="370" height="294">
+
+                        <p class="doing__descrip">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div></li>
                 </ul>
         </section>
     </div>
     <section class="section team ">
         <div class="container">
-        <h2 class="team__title">Наша команда</h2>
+        <h5 class="team__title">Наша команда</h5>
             <ul class="team__list list">
-                    <li class="team__img"><img src="./images/team/productdesigner.jpg" alt="team1" width="270" height="260">
-                    <h3 class="team__name">Ігор Дем'яненко</h3>
+                    <li class="team__img"><img 
+                        srcset="
+                        ./images/team/team_1/desc_img.jpg 270w, 
+                        ./images/team/team_1/mob_img.jpg 450w, 
+                        ./images/team/team_1/tabl_img.jpg 454w, 
+                        ./images/team/team_1/desc_img@2x.jpg 540w, 
+                        ./images/team/team_1/tabl_img@2x.jpg 708w,
+                        ./images/team/team_1/mob_img@2x.jpg 900w"
+                     
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/team_1/productdesigner.jpg" 
+                        alt="team1" 
+                        loading="lazy"
+                        >
+                         <!-- width="450" 
+                        height="360"  -->
+                         
+                    <h6 class="team__name">Ігор Дем'яненко</h6>
                     <p class="team__work">Product Designer</p>
                 <ul class="socialnet list">
-                    <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
+                    <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
                         <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
                     </svg></a></li>
-                    <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
+                    <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
                         <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
                     </svg></a></li>
-                    <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
+                    <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
                         <use href="./images/svg/symbol-defs.svg#icon-facebook-1"></use>
                     </svg></a></li>
-                    <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
+                    <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
                         <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
                     </svg></a></li>
             </ul>
                 </li>
-                    <li class="team__img"><img src="./images/team/frontenddeveloper.jpg" alt="team2" width="270" height="260">
-                    <h3 class="team__name">Ольга Рєпіна</h3>
+                    <li class="team__img">
+                        <img 
+                        srcset="
+                        ./images/team/team_2/desc_img.jpg 270w, 
+                        ./images/team/team_2/mob_img.jpg 450w, 
+                        ./images/team/team_2/tabl_img.jpg 454w, 
+                        ./images/team/team_2/desc_img@2x.jpg 540w, 
+                        ./images/team/team_2/tabl_img@2x.jpg 708w,
+                        ./images/team/team_2/mob_img@2x.jpg 900w"
+                     
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/team_2/frontenddeveloper.jpg" 
+                        alt="team1" 
+                        loading="lazy"
+                        >
+                    <h6 class="team__name">Ольга Рєпіна</h6>
                     <p class="team__work">Frontend Developer</p>
                     <ul class="socialnet list">
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
                             <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-facebook-1"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
                         </svg></a></li>
                 </ul></li>
                                 
-                    <li class="team__img"><img src="./images/team/marketing.jpg" alt="team3" width="270" height="260">
-                    <h3 class="team__name">Микола Тарасов</h3>
+                    <li class="team__img">
+                        <img 
+                        srcset="
+                        ./images/team/team_3/desc_img.jpg 270w, 
+                        ./images/team/team_3/mob_img.jpg 450w, 
+                        ./images/team/team_3/tabl_img.jpg 454w, 
+                        ./images/team/team_3/desc_img@2x.jpg 540w, 
+                        ./images/team/team_3/tabl_img@2x.jpg 708w,
+                        ./images/team/team_3/mob_img@2x.jpg 900w"
+                     
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/team_3/marketing.jpg" 
+                        alt="team1" 
+                        loading="lazy"
+                        >
+                    <h6 class="team__name">Микола Тарасов</h6>
                     <p class="team__work">Marketing</p>
                     <ul class="socialnet list">
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
                             <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-facebook-1"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
                         </svg></a></li>
                 </ul></li>
-                    <li class="team__img"><img src="./images/team/uidesigner.jpg" alt="team4" width="270" height="260">
-                    <h3 class="team__name">Михайло Єрмаков</h3>
+                    <li class="team__img">
+                        <img 
+                        srcset="
+                        ./images/team/team_4/desc_img.jpg 270w, 
+                        ./images/team/team_4/mob_img.jpg 450w, 
+                        ./images/team/team_4/tabl_img.jpg 454w, 
+                        ./images/team/team_4/desc_img@2x.jpg 540w, 
+                        ./images/team/team_4/tabl_img@2x.jpg 708w,
+                        ./images/team/team_4/mob_img@2x.jpg 900w"
+                     
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/team/team_4/uidesigner.jpg" 
+                        alt="team1" 
+                        loading="lazy"
+                        >
+                    <h6 class="team__name">Михайло Єрмаков</h6>
                     <p class="team__work">UI Designer</p>
                     <ul class="socialnet list">
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="instagram"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="twitter"><svg class="socialnet__svg" width="20px" height="16px">
                             <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="facebook"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-facebook-1"></use>
                         </svg></a></li>
-                        <li class="socialnet__li"><a href="" class="socialnet__link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
+                        <li class="socialnet__li"><a href="" class="socialnet__link" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><svg class="socialnet__svg" width="20px" height="20px">
                             <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
                         </svg></a></li>
                 </ul></li>
@@ -194,24 +266,24 @@
             </section>
             <section class="clients">
                 <div class="container">
-                <h2 class="clients__title">Постійні клієнти</h2>
+                <h6 class="clients__title">Постійні клієнти</h6>
                 <ul class="clients__ul list">
-                    <li><a href="" class="clients__link link" target="_blank" rel="noopener noreferrer" aria-label="compan1"><svg class="clients__svg" width="41px" height="46px">
+                    <li><a href="" class="clients__link" target="_blank" rel="noopener noreferrer" aria-label="compan1"><svg class="clients__svg" width="41px" height="46px">
                         <use href="./images/svg/symbol-defs.svg#icon-group"></use>
                 </svg></a></li>
-                    <li><a href="" class="clients__link link" target="_blank" rel="noopener noreferrer" aria-label="compan2"><svg class="clients__svg" width="40px" height="52px">
+                    <li><a href="" class="clients__link" target="_blank" rel="noopener noreferrer" aria-label="compan2"><svg class="clients__svg" width="40px" height="52px">
                         <use href="./images/svg/symbol-defs.svg#icon-group-1"></use>
                 </svg></a></li>
-                    <li><a href="" class="clients__link link" target="_blank" rel="noopener noreferrer" aria-label="compan3"><svg class="clients__svg" width="44px" height="41px">
+                    <li><a href="" class="clients__link" target="_blank" rel="noopener noreferrer" aria-label="compan3"><svg class="clients__svg" width="44px" height="41px">
                         <use href="./images/svg/symbol-defs.svg#icon-group-2"></use>
                 </svg></a></li>
-                    <li><a href="" class="clients__link link" target="_blank" rel="noopener noreferrer" aria-label="compan4"><svg class="clients__svg" width="84px" height="41px">
+                    <li><a href="" class="clients__link" target="_blank" rel="noopener noreferrer" aria-label="compan4"><svg class="clients__svg" width="84px" height="41px">
                         <use href="./images/svg/symbol-defs.svg#icon-group-4"></use>
                 </svg></a></li>
-                    <li><a href="" class="clients__link link" target="_blank" rel="noopener noreferrer" aria-label="compan5"><svg class="clients__svg" width="63px" height="45px">
+                    <li><a href="" class="clients__link" target="_blank" rel="noopener noreferrer" aria-label="compan5"><svg class="clients__svg" width="63px" height="45px">
                         <use href="./images/svg/symbol-defs.svg#icon-group3"></use>
                 </svg></a></li>
-                    <li><a href="" class="clients__link link" target="_blank" rel="noopener noreferrer" aria-label="compan6"><svg class="clients__svg" width="94px" height="44px">
+                    <li><a href="" class="clients__link" target="_blank" rel="noopener noreferrer" aria-label="compan6"><svg class="clients__svg" width="94px" height="44px">
                         <use href="./images/svg/symbol-defs.svg#icon-group-5"></use>
                 </svg></a></li>
                 </ul>
@@ -233,7 +305,7 @@
             </address>
         </div>
         <div class="join">
-                <h2 class="join__h2">ПРИЄДНУЙТЕСЬ</h2>
+                <h6 class="join__h2">ПРИЄДНУЙТЕСЬ</h6>
             <ul class="join__ul list">
                 <li class="join__li"><a href="" class="join__link link" target="_blank" rel="noopener noreferrer" aria-label="instagram">
                     <svg class="join__svg" width="20px" height="20px">
@@ -266,7 +338,7 @@
 
     <div class="backdrop is-hidden"  data-modal>
         <div class="modal">
-    <button type="button" class="modal-batton" data-modal-close><svg class="modal-svg" width="11px" height="11px">
+    <button type="button" class="modal-batton" aria-label="modal-btna" data-modal-close><svg class="modal-svg" width="11px" height="11px">
         <use href="./images/svg/close-modal-btn.svg#icon-close-buttom"></use>
     </svg></button>
 
