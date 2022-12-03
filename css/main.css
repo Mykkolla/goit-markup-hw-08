@@ -356,8 +356,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .sample__li {
-    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
   }
 }
 
@@ -2340,4 +2340,8 @@ img {
 .sample__border {
   border: 1px solid #EEEEEE;
   border-top: none;
+}
+
+.sample__img {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
