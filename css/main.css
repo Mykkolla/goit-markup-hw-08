@@ -368,12 +368,6 @@ img {
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  .sample__signature > img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 767px) {
   .sample__link > img {
     width: 100%;
   }
